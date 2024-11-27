@@ -43,7 +43,7 @@ const defineDocsBuild: BuildOptions = {
   target: "modules",
   sourcemap: false,
   minify: true,
-  outDir: "dist",
+  outDir: "build/docs",
 };
 
 const defineLibBuild: BuildOptions = {

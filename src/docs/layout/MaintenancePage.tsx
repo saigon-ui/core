@@ -110,9 +110,9 @@ const Wrapper = styled.div`
       p {
         margin-top: 46px;
         text-align: center;
-        color: var(--text-yellow);
         font-size: 17px;
         font-style: italic;
+        color: darkgreen;
       }
 
       .coming-soon {
@@ -123,7 +123,7 @@ const Wrapper = styled.div`
         color: darkgreen;
 
         section {
-          width: 460px;
+          width: 360px;
           margin: auto;
           border-radius: 1rem;
           border: 1px solid darkgreen;
@@ -140,10 +140,6 @@ const Wrapper = styled.div`
 
           &.hide {
             opacity: 0;
-          }
-
-          span {
-            letter-spacing: -18px;
           }
         }
       }
@@ -185,24 +181,11 @@ export default function MaintenancePage() {
       }, 1000);
     }, []);
 
-    let txt = "";
-    switch (counter % 4) {
-      case 1:
-        txt = ".";
-        break;
-      case 2:
-        txt = "..";
-        break;
-      case 3:
-        txt = "...";
-        break;
-    }
-    return (
-      <h1 className={txt ? "" : "hide"}>
-        Coming soon
-        <span>{txt}</span>
-      </h1>
-    );
+    let txt = "",
+      idx = counter % 5;
+    for (let i = 0; i < idx; i++) txt += ".";
+
+    return <h1 className={txt ? "" : "hide"}>{`Coming soon ${txt}`}</h1>;
   }
   return (
     <Wrapper>
@@ -221,7 +204,14 @@ export default function MaintenancePage() {
               customize with Sass, utilize the prebuilt grid system and
               components, and easily bring projects to life.
             </h4>
-            <p>“Saigon UI = React(Bootstrap + styled)”</p>
+            <p>
+              “<span style={{ color: "var(--text-yellow)" }}>Saigon UI</span>
+              {" = "}
+              <span style={{ color: "#41e0fd" }}>React</span>(
+              <span style={{ color: "#712cf9" }}>Bootstrap</span>
+              {" + "}
+              <span style={{ color: "#D26AC2" }}>styled</span>)”
+            </p>
           </div>
           <div className="coming-soon">
             <section>
