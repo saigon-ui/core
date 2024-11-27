@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+@font-face {
+    font-family: menlo;
+    font-style: normal;
+    font-weight: 400;
+    src:local('Menlo'),url(../font/Menlo-Regular.ttf) format('woff')
+}
+
+:root {
+    --app-color1: #E8C547;
+    --app-color2: #30323D;
+    --app-color3: #4D5061;
+    --app-color4: #5C80BC;
+    --app-color5: #CDD1C4;
+    --app-colorcold1: #C19A0B;
+    --app-colorcold2: #101639;
+    --app-colorcold3: #1B245B;
+    --app-colorcold4: #1C4DA3;
+    --app-colorcold5: #A3CB47;
+}

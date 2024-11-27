@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "allowJs": true, // Tells TypeScript to read JS files, as normally they are ignored as source files
+    "declaration": true, // Generate d.ts files
+    "emitDeclarationOnly": false, // This compiler run should only output d.ts files
+    "isolatedModules": true,
+    // Types should go into this directory. Removing this would place the .d.ts files next to the .js files
+    //"declarationDir": "dist",
+    "outDir": "lib",
+    //"outFile": "dist/test.d.ts",
+    "sourceMap": false,
+    "declarationMap": false, // go to js file when using IDE functions like "Go to Definition" in VSCode
+    //
+    "target": "ES2020",
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "types": [
+      "@emotion/react"
+    ],
+  },
+  "include": [
+    "src/lib/saigon.types.ts"
+  ],
+  "exclude": [
+    "src/tool/*"
+  ],
+}

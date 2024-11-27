@@ -1,0 +1,8 @@
+{
+    "name": "@saigon-ui/core",
+    "private": false,
+    "main": "../cjs/index.js",
+    "module": "../esm/index.js",
+    "types": "../index.d.ts"
+  }
+  

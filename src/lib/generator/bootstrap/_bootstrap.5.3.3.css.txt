@@ -1,0 +1,1725 @@
+:root, [data-bs-theme="light"]
+[data-bs-theme="dark"]
+*, ::before, ::after
+body
+hr
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1
+h1, .h1
+h2, .h2
+h3, .h3
+h4, .h4
+h5, .h5
+h6, .h6
+p
+abbr[title]
+address
+ol, ul
+ol, ul, dl
+ol ol, ul ul, ol ul, ul ol
+dt
+dd
+blockquote
+b, strong
+small, .small
+mark, .mark
+sub, sup
+sub
+sup
+a
+a:hover
+a:not([href]):not([class]), a:not([href]):not([class]):hover
+pre, code, kbd, samp
+pre
+pre code
+code
+a > code
+kbd
+kbd kbd
+figure
+img, svg
+table
+caption
+th
+thead, tbody, tfoot, tr, td, th
+label
+button
+button:focus:not(:focus-visible)
+input, button, select, optgroup, textarea
+button, select
+[role="button"]
+select
+select:disabled
+[list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="week"]):not([type="time"])::-webkit-calendar-picker-indicator
+button, [type="button"], [type="reset"], [type="submit"]
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled)
+textarea
+fieldset
+legend
+legend + *
+::-webkit-datetime-edit-fields-wrapper, ::-webkit-datetime-edit-text, ::-webkit-datetime-edit-minute, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-year-field
+::-webkit-inner-spin-button
+[type="search"]
+::-webkit-search-decoration
+::-webkit-color-swatch-wrapper
+::-webkit-file-upload-button
+::file-selector-button
+output
+iframe
+summary
+progress
+[hidden]
+
+@START textLead {expect_own_component="TypographyProp"}
+lead
+@END
+
+@START textLevel {expect_own_component="TypographyProp"}
+display-1
+display-2
+display-3
+display-4
+display-5
+display-6
+@END
+
+@START listStyle {prefix="list" extend_type_name="CSS.Property.ListStyle" extend_type_value="none"}
+list-unstyled
+list-inline
+list-inline-item
+#.list-inline-item:not(:last-child)
+@END
+
+.initialism
+.blockquote
+.blockquote > :last-child
+.blockquote-footer
+.blockquote-footer::before
+
+@START imgFluid {sole_type_name="boolean"}
+#.img-fluid
+@END
+
+@START imgThumbnail {sole_type_name="boolean"}
+#.img-thumbnail
+@END
+
+.figure
+.figure-img
+.figure-caption
+
+@START breakpoint {bookmark}
+container
+container-fluid
+container-xxl
+container-xl
+container-lg
+container-md
+container-sm
+@END
+
+:root
+@START gridProps {bookmark}
+.row
+.row > *
+.col
+.row-cols-auto > *
+.row-cols-1 > *
+.row-cols-2 > *
+.row-cols-3 > *
+.row-cols-4 > *
+.row-cols-5 > *
+.row-cols-6 > *
+.col-auto
+.col-1
+.col-2
+.col-3
+.col-4
+.col-5
+.col-6
+.col-7
+.col-8
+.col-9
+.col-10
+.col-11
+.col-12
+.offset-1
+.offset-2
+.offset-3
+.offset-4
+.offset-5
+.offset-6
+.offset-7
+.offset-8
+.offset-9
+.offset-10
+.offset-11
+.g-0, .gx-0
+.g-0, .gy-0
+.g-1, .gx-1
+.g-1, .gy-1
+.g-2, .gx-2
+.g-2, .gy-2
+.g-3, .gx-3
+.g-3, .gy-3
+.g-4, .gx-4
+.g-4, .gy-4
+.g-5, .gx-5
+.g-5, .gy-5
+@END
+
+@START tableProps {bookmark}
+.table
+.table > :not(caption) > * > *
+.table > tbody
+.table > thead
+.table-group-divider
+.caption-top
+.table-sm > :not(caption) > * > *
+.table-bordered > :not(caption) > *
+.table-bordered > :not(caption) > * > *
+.table-borderless > :not(caption) > * > *
+.table-borderless > :not(:first-child)
+.table-striped > tbody > tr:nth-of-type(2n+1) > *
+.table-striped-columns > :not(caption) > tr > :nth-child(2n)
+.table-active
+.table-hover > tbody > tr:hover > *
+.table-primary
+.table-secondary
+.table-success
+.table-info
+.table-warning
+.table-danger
+.table-light
+.table-dark
+.table-responsive
+@END
+
+.form-label
+.col-form-label
+.col-form-label-lg
+.col-form-label-sm
+.form-text
+.form-control
+.form-control[type="file"]
+.form-control[type="file"]:not(:disabled):not([readonly])
+.form-control:focus
+.form-control::-webkit-date-and-time-value
+.form-control::-webkit-datetime-edit
+.form-control::placeholder
+.form-control:disabled
+.form-control::-webkit-file-upload-button
+.form-control::file-selector-button
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button
+.form-control-plaintext
+.form-control-plaintext:focus
+.form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg
+.form-control-sm
+.form-control-sm::-webkit-file-upload-button
+.form-control-sm::file-selector-button
+.form-control-lg
+.form-control-lg::-webkit-file-upload-button
+.form-control-lg::file-selector-button
+textarea.form-control
+textarea.form-control-sm
+textarea.form-control-lg
+.form-control-color
+.form-control-color:not(:disabled):not([readonly])
+.form-control-color::-webkit-color-swatch
+.form-control-color.form-control-sm
+.form-control-color.form-control-lg
+.form-select
+.form-select:focus
+.form-select[multiple], .form-select[size]:not([size="1"])
+.form-select:disabled
+.form-select-sm
+.form-select-lg
+[data-bs-theme="dark"] .form-select
+.form-check
+.form-check .form-check-input
+.form-check-reverse
+.form-check-reverse .form-check-input
+.form-check-input
+.form-check-input[type="checkbox"]
+.form-check-input[type="radio"]
+.form-check-input:active
+.form-check-input:focus
+.form-check-input:checked
+.form-check-input:checked[type="checkbox"]
+.form-check-input:checked[type="radio"]
+.form-check-input[type="checkbox"]:indeterminate
+.form-check-input:disabled
+.form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label
+.form-switch
+.form-switch .form-check-input
+.form-switch .form-check-input:focus
+.form-switch .form-check-input:checked
+.form-switch.form-check-reverse
+.form-switch.form-check-reverse .form-check-input
+.form-check-inline
+.btn-check
+.btn-check[disabled] + .btn, .btn-check:disabled + .btn
+[data-bs-theme="dark"] .form-switch .form-check-input:not(:checked):not(:focus)
+.form-range
+.form-range:focus
+.form-range:focus::-webkit-slider-thumb
+.form-range::-webkit-slider-thumb
+.form-range::-webkit-slider-thumb:active
+.form-range::-webkit-slider-runnable-track
+.form-range:disabled
+.form-range:disabled::-webkit-slider-thumb
+.form-floating
+.form-floating > .form-control, .form-floating > .form-control-plaintext, .form-floating > .form-select
+.form-floating > label
+.form-floating > .form-control, .form-floating > .form-control-plaintext
+.form-floating > .form-control::placeholder, .form-floating > .form-control-plaintext::placeholder
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > .form-control-plaintext:focus, .form-floating > .form-control-plaintext:not(:placeholder-shown)
+.form-floating > .form-control:-webkit-autofill, .form-floating > .form-control-plaintext:-webkit-autofill
+.form-floating > .form-select
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label
+.form-floating > .form-control:focus ~ label::after, .form-floating > .form-control:not(:placeholder-shown) ~ label::after, .form-floating > .form-control-plaintext ~ label::after, .form-floating > .form-select ~ label::after
+.form-floating > .form-control:-webkit-autofill ~ label
+.form-floating > .form-control-plaintext ~ label
+.form-floating > :disabled ~ label, .form-floating > .form-control:disabled ~ label
+.form-floating > :disabled ~ label::after, .form-floating > .form-control:disabled ~ label::after
+.input-group
+.input-group > .form-control, .input-group > .form-select, .input-group > .form-floating
+.input-group > .form-control:focus, .input-group > .form-select:focus, .input-group > .form-floating:focus-within
+.input-group .btn
+.input-group .btn:focus
+.input-group-text
+.input-group-lg > .form-control, .input-group-lg > .form-select, .input-group-lg > .input-group-text, .input-group-lg > .btn
+.input-group-sm > .form-control, .input-group-sm > .form-select, .input-group-sm > .input-group-text, .input-group-sm > .btn
+.input-group-lg > .form-select, .input-group-sm > .form-select
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select
+.input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .input-group.has-validation > .dropdown-toggle:nth-last-child(n+4), .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-control, .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-select
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback)
+.input-group > .form-floating:not(:first-child) > .form-control, .input-group > .form-floating:not(:first-child) > .form-select
+.valid-feedback
+.valid-tooltip
+.was-validated :valid ~ .valid-feedback, .was-validated :valid ~ .valid-tooltip, .is-valid ~ .valid-feedback, .is-valid ~ .valid-tooltip
+.was-validated .form-control:valid, .form-control.is-valid
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus
+.was-validated textarea.form-control:valid, textarea.form-control.is-valid
+.was-validated .form-select:valid, .form-select.is-valid
+.was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"]
+.was-validated .form-select:valid:focus, .form-select.is-valid:focus
+.was-validated .form-control-color:valid, .form-control-color.is-valid
+.was-validated .form-check-input:valid, .form-check-input.is-valid
+.was-validated .form-check-input:valid:checked, .form-check-input.is-valid:checked
+.was-validated .form-check-input:valid:focus, .form-check-input.is-valid:focus
+.was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label
+.form-check-inline .form-check-input ~ .valid-feedback
+.was-validated .input-group > .form-control:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, .was-validated .input-group > .form-select:not(:focus):valid, .input-group > .form-select:not(:focus).is-valid, .was-validated .input-group > .form-floating:not(:focus-within):valid, .input-group > .form-floating:not(:focus-within).is-valid
+.invalid-feedback
+.invalid-tooltip
+.was-validated :invalid ~ .invalid-feedback, .was-validated :invalid ~ .invalid-tooltip, .is-invalid ~ .invalid-feedback, .is-invalid ~ .invalid-tooltip
+.was-validated .form-control:invalid, .form-control.is-invalid
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus
+.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid
+.was-validated .form-select:invalid, .form-select.is-invalid
+.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"]
+.was-validated .form-select:invalid:focus, .form-select.is-invalid:focus
+.was-validated .form-control-color:invalid, .form-control-color.is-invalid
+.was-validated .form-check-input:invalid, .form-check-input.is-invalid
+.was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked
+.was-validated .form-check-input:invalid:focus, .form-check-input.is-invalid:focus
+.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label
+.form-check-inline .form-check-input ~ .invalid-feedback
+.was-validated .input-group > .form-control:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, .was-validated .input-group > .form-select:not(:focus):invalid, .input-group > .form-select:not(:focus).is-invalid, .was-validated .input-group > .form-floating:not(:focus-within):invalid, .input-group > .form-floating:not(:focus-within).is-invalid
+
+@START btnProps {bookmark}
+.btn
+.btn:hover
+.btn-check + .btn:hover
+.btn:focus-visible
+.btn-check:focus-visible + .btn
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show
+.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible
+.btn-check:checked:focus-visible + .btn
+.btn:disabled, .btn.disabled, fieldset:disabled .btn
+.btn-primary
+.btn-secondary
+.btn-success
+.btn-info
+.btn-warning
+.btn-danger
+.btn-light
+.btn-dark
+.btn-outline-primary
+.btn-outline-secondary
+.btn-outline-success
+.btn-outline-info
+.btn-outline-warning
+.btn-outline-danger
+.btn-outline-light
+.btn-outline-dark
+.btn-link
+.btn-link:focus-visible
+.btn-link:hover
+.btn-lg, .btn-group-lg > .btn
+.btn-sm, .btn-group-sm > .btn
+@END
+
+.fade
+.fade:not(.show)
+.collapse:not(.show)
+.collapsing
+.collapsing.collapse-horizontal
+.dropup, .dropend, .dropdown, .dropstart, .dropup-center, .dropdown-center
+.dropdown-toggle
+.dropdown-toggle::after
+.dropdown-toggle:empty::after
+.dropdown-menu
+.dropdown-menu[data-bs-popper]
+.dropdown-menu-start
+.dropdown-menu-start[data-bs-popper]
+.dropdown-menu-end
+.dropdown-menu-end[data-bs-popper]
+.dropup .dropdown-menu[data-bs-popper]
+.dropup .dropdown-toggle::after
+.dropup .dropdown-toggle:empty::after
+.dropend .dropdown-menu[data-bs-popper]
+.dropend .dropdown-toggle::after
+.dropend .dropdown-toggle:empty::after
+.dropend .dropdown-toggle::after
+.dropstart .dropdown-menu[data-bs-popper]
+.dropstart .dropdown-toggle::after
+.dropstart .dropdown-toggle::after
+.dropstart .dropdown-toggle::before
+.dropstart .dropdown-toggle:empty::after
+.dropstart .dropdown-toggle::before
+.dropdown-divider
+.dropdown-item
+.dropdown-item:hover, .dropdown-item:focus
+.dropdown-item.active, .dropdown-item:active
+.dropdown-item.disabled, .dropdown-item:disabled
+.dropdown-menu.show
+.dropdown-header
+.dropdown-item-text
+.dropdown-menu-dark
+.btn-group, .btn-group-vertical
+.btn-group > .btn, .btn-group-vertical > .btn
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:focus + .btn, .btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active, .btn-group-vertical > .btn-check:checked + .btn, .btn-group-vertical > .btn-check:focus + .btn, .btn-group-vertical > .btn:hover, .btn-group-vertical > .btn:focus, .btn-group-vertical > .btn:active, .btn-group-vertical > .btn.active
+.btn-toolbar
+.btn-toolbar .input-group
+.btn-group
+.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > .btn-group:not(:first-child)
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .btn-group:not(:last-child) > .btn
+.btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > .btn-group:not(:first-child) > .btn
+.dropdown-toggle-split
+.dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropend .dropdown-toggle-split::after
+.dropstart .dropdown-toggle-split::before
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split
+.btn-group-vertical
+.btn-group-vertical > .btn, .btn-group-vertical > .btn-group
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-group:not(:first-child)
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-group:not(:last-child) > .btn
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-group:not(:first-child) > .btn
+.nav
+.nav-link
+.nav-link:hover, .nav-link:focus
+.nav-link:focus-visible
+.nav-link.disabled, .nav-link:disabled
+.nav-tabs
+.nav-tabs .nav-link
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link
+.nav-tabs .dropdown-menu
+.nav-pills
+.nav-pills .nav-link
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+.nav-underline
+.nav-underline .nav-link
+.nav-underline .nav-link:hover, .nav-underline .nav-link:focus
+.nav-underline .nav-link.active, .nav-underline .show > .nav-link
+.nav-fill > .nav-link, .nav-fill .nav-item
+.nav-justified > .nav-link, .nav-justified .nav-item
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link
+.tab-content > .tab-pane
+.tab-content > .active
+.navbar
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl
+.navbar-brand
+.navbar-brand:hover, .navbar-brand:focus
+.navbar-nav
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show
+.navbar-nav .dropdown-menu
+.navbar-text
+.navbar-text a, .navbar-text a:hover, .navbar-text a:focus
+.navbar-collapse
+.navbar-toggler
+.navbar-toggler:hover
+.navbar-toggler:focus
+.navbar-toggler-icon
+.navbar-nav-scroll
+.navbar-expand
+.navbar-expand .navbar-nav
+.navbar-expand .navbar-nav .dropdown-menu
+.navbar-expand .navbar-nav .nav-link
+.navbar-expand .navbar-nav-scroll
+.navbar-expand .navbar-collapse
+.navbar-expand .navbar-toggler
+.navbar-expand .offcanvas
+.navbar-expand .offcanvas .offcanvas-header
+.navbar-expand .offcanvas .offcanvas-body
+.navbar-dark, .navbar[data-bs-theme="dark"]
+[data-bs-theme="dark"] .navbar-toggler-icon
+.card
+.card > hr
+.card > .list-group
+.card > .list-group:first-child
+.card > .list-group:last-child
+.card > .card-header + .list-group, .card > .list-group + .card-footer
+.card-body
+.card-title
+.card-subtitle
+.card-text:last-child
+.card-link + .card-link
+.card-header
+.card-header:first-child
+.card-footer
+.card-footer:last-child
+.card-header-tabs
+.card-header-tabs .nav-link.active
+.card-header-pills
+.card-img-overlay
+.card-img, .card-img-top, .card-img-bottom
+.card-img, .card-img-top
+.card-img, .card-img-bottom
+.card-group > .card
+.accordion
+.accordion-button
+.accordion-button:not(.collapsed)
+.accordion-button:not(.collapsed)::after
+.accordion-button::after
+.accordion-button:hover
+.accordion-button:focus
+.accordion-header
+.accordion-item
+.accordion-item:first-of-type
+.accordion-item:first-of-type > .accordion-header .accordion-button
+.accordion-item:not(:first-of-type)
+.accordion-item:last-of-type
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed
+.accordion-item:last-of-type > .accordion-collapse
+.accordion-body
+.accordion-flush > .accordion-item
+.accordion-flush > .accordion-item:first-child
+.accordion-flush > .accordion-item:last-child
+.accordion-flush > .accordion-item > .accordion-header .accordion-button, .accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed
+.accordion-flush > .accordion-item > .accordion-collapse
+[data-bs-theme="dark"] .accordion-button::after
+.breadcrumb
+.breadcrumb-item + .breadcrumb-item
+.breadcrumb-item + .breadcrumb-item::before
+.breadcrumb-item.active
+.pagination
+.page-link
+.page-link:hover
+.page-link:focus
+.page-link.active, .active > .page-link
+.page-link.disabled, .disabled > .page-link
+.page-item:not(:first-child) .page-link
+.page-item:first-child .page-link
+.page-item:last-child .page-link
+.pagination-lg
+.pagination-sm
+.badge
+.badge:empty
+.btn .badge
+.alert
+.alert-heading
+.alert-link
+.alert-dismissible
+.alert-dismissible .btn-close
+.alert-primary
+.alert-secondary
+.alert-success
+.alert-info
+.alert-warning
+.alert-danger
+.alert-light
+.alert-dark
+.progress, .progress-stacked
+.progress-bar
+.progress-bar-striped
+.progress-stacked > .progress
+.progress-stacked > .progress > .progress-bar
+.progress-bar-animated
+.list-group
+.list-group-numbered
+.list-group-numbered > .list-group-item::before
+.list-group-item-action
+.list-group-item-action:hover, .list-group-item-action:focus
+.list-group-item-action:active
+.list-group-item
+.list-group-item:first-child
+.list-group-item:last-child
+.list-group-item.disabled, .list-group-item:disabled
+.list-group-item.active
+.list-group-item + .list-group-item
+.list-group-item + .list-group-item.active
+.list-group-horizontal
+.list-group-horizontal > .list-group-item:first-child:not(:last-child)
+.list-group-horizontal > .list-group-item:last-child:not(:first-child)
+.list-group-horizontal > .list-group-item.active
+.list-group-horizontal > .list-group-item + .list-group-item
+.list-group-horizontal > .list-group-item + .list-group-item.active
+.list-group-flush
+.list-group-flush > .list-group-item
+.list-group-flush > .list-group-item:last-child
+.list-group-item-primary
+.list-group-item-secondary
+.list-group-item-success
+.list-group-item-info
+.list-group-item-warning
+.list-group-item-danger
+.list-group-item-light
+.list-group-item-dark
+.btn-close
+.btn-close:hover
+.btn-close:focus
+.btn-close:disabled, .btn-close.disabled
+.btn-close-white
+[data-bs-theme="dark"] .btn-close
+.toast
+.toast.showing
+.toast:not(.show)
+.toast-container
+.toast-container > :not(:last-child)
+.toast-header
+.toast-header .btn-close
+.toast-body
+.modal
+.modal-dialog
+.modal.fade .modal-dialog
+.modal.show .modal-dialog
+.modal.modal-static .modal-dialog
+.modal-dialog-scrollable
+.modal-dialog-scrollable .modal-content
+.modal-dialog-scrollable .modal-body
+.modal-dialog-centered
+.modal-content
+.modal-backdrop
+.modal-backdrop.fade
+.modal-backdrop.show
+.modal-header
+.modal-header .btn-close
+.modal-title
+.modal-body
+.modal-footer
+.modal-footer > *
+.modal-fullscreen
+.modal-fullscreen .modal-content
+.modal-fullscreen .modal-header, .modal-fullscreen .modal-footer
+.modal-fullscreen .modal-body
+.tooltip
+.tooltip.show
+.tooltip .tooltip-arrow
+.tooltip .tooltip-arrow::before
+.bs-tooltip-top .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow
+.bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before
+.bs-tooltip-end .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow
+.bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before
+.bs-tooltip-bottom .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow
+.bs-tooltip-bottom .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before
+.bs-tooltip-start .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow
+.bs-tooltip-start .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before
+.tooltip-inner
+.popover
+.popover .popover-arrow
+.popover .popover-arrow::before, .popover .popover-arrow::after
+.bs-popover-top > .popover-arrow, .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow
+.bs-popover-top > .popover-arrow::before, .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::before, .bs-popover-top > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after
+.bs-popover-top > .popover-arrow::before, .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::before
+.bs-popover-top > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after
+.bs-popover-end > .popover-arrow, .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow
+.bs-popover-end > .popover-arrow::before, .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::before, .bs-popover-end > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::after
+.bs-popover-end > .popover-arrow::before, .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::before
+.bs-popover-end > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::after
+.bs-popover-bottom > .popover-arrow, .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow
+.bs-popover-bottom > .popover-arrow::before, .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::before, .bs-popover-bottom > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::after
+.bs-popover-bottom > .popover-arrow::before, .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::before
+.bs-popover-bottom > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::after
+.bs-popover-bottom .popover-header::before, .bs-popover-auto[data-popper-placement^="bottom"] .popover-header::before
+.bs-popover-start > .popover-arrow, .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow
+.bs-popover-start > .popover-arrow::before, .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::before, .bs-popover-start > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::after
+.bs-popover-start > .popover-arrow::before, .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::before
+.bs-popover-start > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::after
+.popover-header
+.popover-header:empty
+.popover-body
+.carousel
+.carousel.pointer-event
+.carousel-inner
+.carousel-inner::after
+.carousel-item
+.carousel-item.active, .carousel-item-next, .carousel-item-prev
+.carousel-item-next:not(.carousel-item-start), .active.carousel-item-end
+.carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start
+.carousel-fade .carousel-item
+.carousel-fade .carousel-item.active, .carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end
+.carousel-fade .active.carousel-item-start, .carousel-fade .active.carousel-item-end
+.carousel-control-prev, .carousel-control-next
+.carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-next:focus
+.carousel-control-prev
+.carousel-control-next
+.carousel-control-prev-icon, .carousel-control-next-icon
+.carousel-control-prev-icon
+.carousel-control-next-icon
+.carousel-indicators
+.carousel-indicators [data-bs-target]
+.carousel-indicators .active
+.carousel-caption
+.carousel-dark .carousel-control-prev-icon, .carousel-dark .carousel-control-next-icon
+.carousel-dark .carousel-indicators [data-bs-target]
+.carousel-dark .carousel-caption
+[data-bs-theme="dark"] .carousel .carousel-control-prev-icon, [data-bs-theme="dark"] .carousel .carousel-control-next-icon, [data-bs-theme="dark"].carousel .carousel-control-prev-icon, [data-bs-theme="dark"].carousel .carousel-control-next-icon
+[data-bs-theme="dark"] .carousel .carousel-indicators [data-bs-target], [data-bs-theme="dark"].carousel .carousel-indicators [data-bs-target]
+[data-bs-theme="dark"] .carousel .carousel-caption, [data-bs-theme="dark"].carousel .carousel-caption
+.spinner-grow, .spinner-border
+.spinner-border
+.spinner-border-sm
+.spinner-grow
+.spinner-grow-sm
+.offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm
+.offcanvas
+.offcanvas.offcanvas-start
+.offcanvas.offcanvas-end
+.offcanvas.offcanvas-top
+.offcanvas.offcanvas-bottom
+.offcanvas.showing, .offcanvas.show:not(.hiding)
+.offcanvas.showing, .offcanvas.hiding, .offcanvas.show
+.offcanvas-backdrop
+.offcanvas-backdrop.fade
+.offcanvas-backdrop.show
+.offcanvas-header
+.offcanvas-header .btn-close
+.offcanvas-title
+.offcanvas-body
+.placeholder
+.placeholder.btn::before
+.placeholder-xs
+.placeholder-sm
+.placeholder-lg
+.placeholder-glow .placeholder
+.placeholder-wave
+.clearfix::after
+
+@START textBg {hard_type_name="ThemeColor" extend_type_value="none"}
+text-bg-primary
+text-bg-secondary
+text-bg-success
+text-bg-info
+text-bg-warning
+text-bg-danger
+text-bg-light
+text-bg-dark
+@END
+
+@START linkColor {prefix="link" extend_type_name="ThemeColor" extend_type_value="none"}
+#link-primary
+#link-primary:hover, .link-primary:focus
+#link-secondary
+#link-secondary:hover, .link-secondary:focus
+#link-success
+#link-success:hover, .link-success:focus
+#link-info
+#link-info:hover, .link-info:focus
+#link-warning
+#link-warning:hover, .link-warning:focus
+#link-danger
+#link-danger:hover, .link-danger:focus
+#link-light
+#link-light:hover, .link-light:focus
+#link-dark
+#link-dark:hover, .link-dark:focus
+link-body-emphasis
+#link-body-emphasis:hover, .link-body-emphasis:focus
+@END
+
+#focus-ring:focus
+icon-link
+#icon-link > .bi
+#icon-link-hover:hover > .bi, .icon-link-hover:focus-visible > .bi
+
+@START aspectRatio {prefix="ratio" extend_type_value="none"}
+#ratio 
+#ratio::before
+#ratio > *
+ratio-1x1
+ratio-4x3
+ratio-16x9
+ratio-21x9
+@END
+
+@START fixed {prefix="fixed" extend_type_value="none"}
+fixed-top
+fixed-bottom
+@END
+
+@START sticky {prefix="sticky" extend_type_value="none"}
+sticky-top
+sticky-bottom
+@END
+
+@START hstack {sole_type_name="boolean"}
+hstack
+@END
+
+@START vstack {sole_type_name="boolean"}
+vstack
+@END
+
+.visually-hidden, .visually-hidden-focusable:not(:focus):not(:focus-within)
+.visually-hidden:not(caption), .visually-hidden-focusable:not(:focus):not(:focus-within):not(caption)
+
+@START stretchedLink {sole_type_name="boolean"}
+#.stretched-link::after
+@END
+
+@START textTrunc {sole_type_name="boolean"}
+text-truncate
+@END
+
+.vr
+
+@START vAlign {prefix="align" extend_type_value="none"}
+align-baseline
+align-top
+align-middle
+align-bottom
+@END
+
+@START vTextAlign {prefix="align-text" extend_type_value="none"}
+align-text-bottom
+align-text-top
+@END
+
+@START float {prefix="float"}
+float-start
+float-end
+float-none
+@END
+
+@START objectFit {prefix="object-fit"}
+object-fit-contain
+object-fit-cover
+object-fit-fill
+object-fit-scale
+object-fit-none
+@END
+
+@START opacity {prefix="opacity" extend_type_name="CSS.Property.Opacity" extend_type_value="none"}
+opacity-0
+opacity-25
+opacity-50
+opacity-75
+opacity-100
+@END
+
+@START overflow {prefix="overflow" extend_type_name="CSS.Property.Overflow" extend_type_value="none"}
+overflow-auto
+overflow-hidden
+overflow-visible
+overflow-scroll
+@END
+
+@START overflowX {prefix="overflow-x" extend_type_name="CSS.Property.OverflowX" extend_type_value="none"}
+overflow-x-auto
+overflow-x-hidden
+overflow-x-visible
+overflow-x-scroll
+@END
+
+@START overflowY {prefix="overflow-y" extend_type_name="CSS.Property.OverflowY" extend_type_value="none"}
+overflow-y-auto
+overflow-y-hidden
+overflow-y-visible
+overflow-y-scroll
+@END
+
+@START display {prefix="d" extend_type_name="CSS.Property.Display"}
+d-inline
+d-inline-block
+d-block
+d-grid
+d-inline-grid
+d-table
+d-table-row
+d-table-cell
+d-flex
+d-inline-flex
+d-none
+@END
+
+@START shadow {prefix="shadow" extend_type_name="CSS.Property.BoxShadow" extend_type_value="none"}
+shadow
+shadow-sm
+shadow-lg
+shadow-none
+@END
+
+@START focusRing {hard_type_name="ThemeColor" extend_type_value="none" extend_type_value="none"}
+focus-ring-primary
+focus-ring-secondary
+focus-ring-success
+focus-ring-info
+focus-ring-warning
+focus-ring-danger
+focus-ring-light
+focus-ring-dark
+@END
+
+@START position {prefix="position" extend_type_value="none"}
+position-static
+position-relative
+position-absolute
+position-fixed
+position-sticky
+@END
+
+@START top {prefix="top" extend_type_name="CSS.Property.Top" extend_type_value="none"}
+top-0
+top-50
+top-100
+@END
+
+@START bottom {prefix="bottom" extend_type_name="CSS.Property.Bottom" extend_type_value="none"}
+bottom-0
+bottom-50
+bottom-100
+@END
+
+@START start {prefix="start" extend_type_name="CSS.Property.Left" extend_type_value="none"}
+start-0
+start-50
+start-100
+@END
+
+@START end {prefix="end" extend_type_name="CSS.Property.Right" extend_type_value="none"}
+end-0
+end-50
+end-100
+@END
+
+@START left {prefix="start" extend_type_name="CSS.Property.Left" extend_type_value="none"}
+start-0
+start-50
+start-100
+@END
+
+@START right {prefix="end" extend_type_name="CSS.Property.Right" extend_type_value="none"}
+end-0
+end-50
+end-100
+@END
+
+@START translateMiddle {hard_type_name="boolean"}
+translate-middle
+@END
+
+@START translateMiddleX {hard_type_name="boolean"}
+translate-middle-x
+@END
+
+@START translateMiddleY {hard_type_name="boolean"}
+translate-middle-y
+@END
+
+@START border {extend_type_name="boolean,CSS.Property.Border" extend_type_value="0,none"}
+border
+border-0
+@END
+
+@START borderTop {extend_type_name="boolean,CSS.Property.BorderTop" extend_type_value="0,none"}
+border-top
+border-top-0
+@END
+
+@START borderEnd {extend_type_name="boolean,CSS.Property.BorderLeft" extend_type_value="0,none"}
+border-end
+border-end-0
+@END
+
+@START borderBottom {extend_type_name="boolean,CSS.Property.BorderBottom" extend_type_value="0,none"}
+border-bottom
+border-bottom-0
+@END
+
+@START borderStart {extend_type_name="boolean,CSS.Property.BorderRight" extend_type_value="0,none"}
+border-start
+border-start-0
+@END
+
+@START borderColor {hard_type_name="ThemeColor,CSS.Property.BorderColor" extend_type_value="black,white,none"}
+border-primary
+border-secondary
+border-success
+border-info
+border-warning
+border-danger
+border-light
+border-dark
+border-black
+border-white
+@END
+
+@START borderSubtle {sole_type_name="boolean"}
+border-primary-subtle
+border-secondary-subtle
+border-success-subtle
+border-info-subtle
+border-warning-subtle
+border-danger-subtle
+border-light-subtle
+border-dark-subtle
+@END
+
+@START borderWidth {prefix="border" extend_type_name="CSS.Property.BorderWidth" extend_type_value="none"}
+border-1
+border-2
+border-3
+border-4
+border-5
+@END
+
+@START borderOpacity {prefix="border-opacity" extend_type_name="number" extend_type_value="none"}
+border-opacity-10
+border-opacity-25
+border-opacity-50
+border-opacity-75
+border-opacity-100
+@END
+
+@START width {prefix="w" extend_type_name="CSS.Property.Width" extend_type_value="none"}
+w-25
+w-50
+w-75
+w-100
+w-auto
+@END
+
+@START maxWidth {prefix="mw" extend_type_name="CSS.Property.MaxWidth" extend_type_value="none"}
+mw-25
+mw-50
+mw-75
+mw-100
+mw-auto
+@END
+
+@START minWidth {prefix="minw" extend_type_name="CSS.Property.MinWidth" extend_type_value="none"}
+minw-25
+minw-50
+minw-75
+minw-100
+minw-auto
+@END
+
+@START viewportWidth {bookmark prefix="vw" extend_type_name="number" extend_type_value="none"}
+vw-100
+@END
+
+@START minViewportWidth {bookmark prefix="min-vw" extend_type_name="number" extend_type_value="none"}
+min-vw-100
+@END
+
+@START height {prefix="h" extend_type_name="CSS.Property.Height" extend_type_value="none"}
+h-25
+h-50
+h-75
+h-100
+h-auto
+@END
+
+@START maxHeight {prefix="mh" extend_type_name="CSS.Property.MaxHeight" extend_type_value="none"}
+mh-25
+mh-50
+mh-75
+mh-100
+mh-auto
+@END
+
+@START minHeight {prefix="minh" extend_type_name="CSS.Property.MinHeight" extend_type_value="none"}
+minh-25
+minh-50
+minh-75
+minh-100
+minh-auto
+@END
+
+@START viewportHeight {bookmark prefix="vh" extend_type_name="number" extend_type_value="none"}
+vh-100
+@END
+
+@START minViewportWidth {bookmark prefix="min-vh" extend_type_name="number" extend_type_value="none"}
+min-vh-100
+@END
+
+@START flex {prefix="flex" extend_type_name="CSS.Property.Flex" extend_type_value="none"}
+flex-fill
+flex-row
+flex-column
+flex-row-reverse
+flex-column-reverse
+flex-grow-0
+flex-grow-1
+flex-shrink-0
+flex-shrink-1
+flex-wrap
+flex-nowrap
+flex-wrap-reverse
+@END
+
+@START justifyContent {prefix="justify-content" extend_type_name="CSS.Property.JustifyContent" extend_type_value="none"}
+justify-content-start
+justify-content-end
+justify-content-center
+justify-content-between
+justify-content-around
+justify-content-evenly
+@END
+
+@START alignItems {prefix="align-items" extend_type_name="CSS.Property.AlignItems" extend_type_value="none"}
+align-items-start
+align-items-end
+align-items-center
+align-items-baseline
+align-items-stretch
+@END
+
+@START alignContent {prefix="align-content" extend_type_name="CSS.Property.AlignContent" extend_type_value="none"}
+align-content-start
+align-content-end
+align-content-center
+align-content-between
+align-content-around
+align-content-stretch
+@END
+
+@START alignSelf {prefix="align-self" extend_type_name="CSS.Property.AlignSelf" extend_type_value="none"}
+align-self-auto
+align-self-start
+align-self-end
+align-self-center
+align-self-baseline
+align-self-stretch
+@END
+
+@START order {prefix="order" extend_type_name="CSS.Property.Order" extend_type_value="none"}
+order-first
+order-0
+order-1
+order-2
+order-3
+order-4
+order-5
+order-last
+@END
+
+@START m {sole_type_value="'0','1','2','3','4','5','auto'" extend_type_name="CSS.Property.Margin" extend_type_value="none"}
+m-0
+m-1
+m-2
+m-3
+m-4
+m-5
+m-auto
+@END
+
+@START mx {prefix="mx" extend_type_name="CSS.Property.MarginLeft,CSS.Property.MarginRight" extend_type_value="none"}
+mx-0
+mx-1
+mx-2
+mx-3
+mx-4
+mx-5
+mx-auto
+@END
+
+@START my {prefix="my" extend_type_name="CSS.Property.MarginTop,CSS.Property.MarginBottom" extend_type_value="none"}
+my-0
+my-1
+my-2
+my-3
+my-4
+my-5
+my-auto
+@END
+
+@START mt {prefix="mt" extend_type_name="CSS.Property.MarginTop" extend_type_value="none"}
+mt-0
+mt-1
+mt-2
+mt-3
+mt-4
+mt-5
+mt-auto
+@END
+
+@START me {prefix="me" extend_type_name="CSS.Property.MarginRight" extend_type_value="none"}
+me-0
+me-1
+me-2
+me-3
+me-4
+me-5
+me-auto
+@END
+
+@START mb {prefix="mb" extend_type_name="CSS.Property.MarginBottom" extend_type_value="none"}
+mb-0
+mb-1
+mb-2
+mb-3
+mb-4
+mb-5
+mb-auto
+@END
+
+@START ms {prefix="ms" extend_type_name="CSS.Property.MarginLeft" extend_type_value="none"}
+ms-0
+ms-1
+ms-2
+ms-3
+ms-4
+ms-5
+ms-auto
+@END
+
+@START p {sole_type_value="'0','1','2','3','4','5'" extend_type_name="CSS.Property.Padding" extend_type_value="none"}
+p-0
+p-1
+p-2
+p-3
+p-4
+p-5
+@END
+
+@START px {prefix="px" extend_type_name="CSS.Property.PaddingLeft,CSS.Property.PaddingRight"}
+px-0
+px-1
+px-2
+px-3
+px-4
+px-5
+@END
+
+@START py {prefix="py" extend_type_name="CSS.Property.PaddingTop,CSS.Property.PaddingBottom" extend_type_value="none"}
+py-0
+py-1
+py-2
+py-3
+py-4
+py-5
+@END
+
+@START pt {prefix="pt" extend_type_name="CSS.Property.PaddingTop" extend_type_value="none"}
+pt-0
+pt-1
+pt-2
+pt-3
+pt-4
+pt-5
+@END
+
+@START pe {prefix="pe" extend_type_name="CSS.Property.PaddingRight" extend_type_value="none"}
+pe-0
+pe-1
+pe-2
+pe-3
+pe-4
+pe-5
+@END
+
+@START pb {prefix="pb" extend_type_name="CSS.Property.PaddingBottom" extend_type_value="none"}
+pb-0
+pb-1
+pb-2
+pb-3
+pb-4
+pb-5
+@END
+
+@START ps {prefix="ps" extend_type_name="CSS.Property.PaddingLeft" extend_type_value="none"}
+ps-0
+ps-1
+ps-2
+ps-3
+ps-4
+ps-5
+@END
+
+@START gap {prefix="gap" extend_type_name="CSS.Property.Gap" extend_type_value="none"}
+gap-0
+gap-1
+gap-2
+gap-3
+gap-4
+gap-5
+@END
+
+@START rowGap {prefix="row-gap" extend_type_name="CSS.Property.RowGap" extend_type_value="none"}
+row-gap-0
+row-gap-1
+row-gap-2
+row-gap-3
+row-gap-4
+row-gap-5
+@END
+
+@START columnGap {prefix="column-gap" extend_type_name="CSS.Property.ColumnGap" extend_type_value="none"}
+column-gap-0
+column-gap-1
+column-gap-2
+column-gap-3
+column-gap-4
+column-gap-5
+@END
+
+@START fontMonospace {sole_type_name="boolean"}
+font-monospace
+@END
+
+@START fontSize {prefix="fs" extend_type_name="CSS.Property.FontSize" extend_type_value="none"}
+fs-1
+fs-2
+fs-3
+fs-4
+fs-5
+fs-6
+@END
+
+@START fontStyle {prefix="fst" extend_type_name="CSS.Property.FontStyle" extend_type_value="none"}
+fst-italic
+fst-normal
+@END
+
+@START fontWeight {prefix="fw" extend_type_name="CSS.Property.FontWeight" extend_type_value="none"}
+fw-lighter
+fw-light
+fw-normal
+fw-medium
+fw-semibold
+fw-bold
+fw-bolder
+@END
+
+@START lineHeight {prefix="lh" extend_type_name="CSS.Property.LineHeight" extend_type_value="none"}
+lh-1
+lh-sm
+lh-base
+lh-lg
+@END
+
+@START textAlign {prefix="text" extend_type_value="none"}
+text-start
+text-end
+text-center
+@END
+
+@START textDecoration {prefix="text-decoration" extend_type_name="CSS.Property.TextDecoration"}
+text-decoration-none
+text-decoration-underline
+text-decoration-line-through
+@END
+
+@START textTransform {prefix="text" extend_type_name="CSS.Property.TextTransform" extend_type_value="none"}
+text-lowercase
+text-uppercase
+text-capitalize
+@END
+
+@START textWrap {prefix="text" extend_type_value="none"}
+text-wrap
+text-nowrap
+@END
+
+@START textBreak {sole_type_name="boolean"}
+text-break
+@END
+
+@START textColor {hard_type_name="ThemeColor" extend_type_value="black,white,body,muted,black-50,white-50,body-secondary,body-tertiary,body-emphasis,none" extend_type_name="CSS.Property.Color"}
+text-primary
+text-secondary
+text-success
+text-info
+text-warning
+text-danger
+text-light
+text-dark
+text-black
+text-white
+text-body
+text-muted
+text-black-50
+text-white-50
+text-body-secondary
+text-body-tertiary
+text-body-emphasis
+@END
+
+@START textReset {sole_type_name="boolean"}
+text-reset
+@END
+
+@START textOpacity {prefix="text-opacity" extend_type_name="CSS.Property.Opacity" extend_type_value="none"}
+text-opacity-25
+text-opacity-50
+text-opacity-75
+text-opacity-100
+@END
+
+@START textEmphasis {hard_type_name="boolean"}
+text-primary-emphasis
+text-secondary-emphasis
+text-success-emphasis
+text-info-emphasis
+text-warning-emphasis
+text-danger-emphasis
+text-light-emphasis
+text-dark-emphasis
+@END
+
+@START linkOpacity {prefix="link-opacity" extend_type_name="number" extend_type_value="none"}
+link-opacity-10
+#link-opacity-10-hover:hover
+link-opacity-25
+#link-opacity-25-hover:hover
+link-opacity-50
+#link-opacity-50-hover:hover
+link-opacity-75
+#link-opacity-75-hover:hover
+link-opacity-100
+#link-opacity-100-hover:hover
+@END
+
+@START linkOffset {prefix="link-offset" extend_type_name="CSS.Property.TextUnderlineOffset" extend_type_value="none"}
+link-offset-1
+#link-offset-1-hover:hover
+link-offset-2
+#link-offset-2-hover:hover
+link-offset-3
+#link-offset-3-hover:hover
+@END
+
+@START linkUnderline {prefix="link-underline" hard_type_name="ThemeColor" extend_type_name="boolean" extend_type_value="none"}
+link-underline-primary
+link-underline-secondary
+link-underline-success
+link-underline-info
+link-underline-warning
+link-underline-danger
+link-underline-light
+link-underline-dark
+link-underline
+@END
+
+@START linkUnderlineOpacity {prefix="link-underline-opacity" extend_type_name="number" extend_type_value="none"}
+link-underline-opacity-0
+#link-underline-opacity-0-hover:hover
+link-underline-opacity-10
+#link-underline-opacity-10-hover:hover
+link-underline-opacity-25
+#link-underline-opacity-25-hover:hover
+link-underline-opacity-50
+#link-underline-opacity-50-hover:hover
+link-underline-opacity-75
+#link-underline-opacity-75-hover:hover
+link-underline-opacity-100
+#link-underline-opacity-100-hover:hover
+@END
+
+@START bg {prefix="bg" hard_type_name="ThemeColor" extend_type_value="black,white,body,transparent,body-secondary,body-tertiary,none" extend_type_name="CSS.Property.BackgroundColor" }
+bg-primary
+bg-secondary
+bg-success
+bg-info
+bg-warning
+bg-danger
+bg-light
+bg-dark
+bg-black 
+bg-white
+bg-body
+bg-transparent
+bg-body-secondary
+bg-body-tertiary
+@END
+
+@START bgOpacity {prefix="bg-opacity" extend_type_name="number" extend_type_value="none"}
+bg-opacity-10
+bg-opacity-25
+bg-opacity-50
+bg-opacity-75
+bg-opacity-100
+@END
+
+@START bgSubtle {sole_type_name="boolean"}
+bg-primary-subtle
+bg-secondary-subtle
+bg-success-subtle
+bg-info-subtle
+bg-warning-subtle
+bg-danger-subtle
+bg-light-subtle
+bg-dark-subtle
+@END
+
+@START bgGradient {sole_type_name="boolean"}
+bg-gradient
+@END
+
+@START userSelect {prefix="user-select" extend_type_name="CSS.Property.UserSelect"}
+user-select-all
+user-select-auto
+user-select-none
+@END
+
+@START pointerEvents {prefix="pe"}
+pe-none
+pe-auto
+@END
+
+@START borderRadius {prefix="rounded" extend_type_name="CSS.Property.BorderRadius"  extend_type_value="none"}
+rounded
+rounded-0
+rounded-1
+rounded-2
+rounded-3
+rounded-4
+rounded-5
+rounded-circle
+rounded-pill
+@END
+
+@START borderRadiusTop {prefix="rounded-top" extend_type_name="CSS.Property.BorderRadius" extend_type_value="none"}
+rounded-top
+rounded-top-0
+rounded-top-1
+rounded-top-2
+rounded-top-3
+rounded-top-4
+rounded-top-5
+rounded-top-circle
+rounded-top-pill
+@END
+
+@START borderRadiusEnd {prefix="rounded-end" extend_type_name="CSS.Property.BorderRadius" extend_type_value="none"}
+rounded-end
+rounded-end-0
+rounded-end-1
+rounded-end-2
+rounded-end-3
+rounded-end-4
+rounded-end-5
+rounded-end-circle
+rounded-end-pill
+@END
+
+@START borderRadiusBottom {prefix="rounded-bottom" extend_type_name="CSS.Property.BorderRadius" extend_type_value="none"}
+rounded-bottom
+rounded-bottom-0
+rounded-bottom-1
+rounded-bottom-2
+rounded-bottom-3
+rounded-bottom-4
+rounded-bottom-5
+rounded-bottom-circle
+rounded-bottom-pill
+@END
+
+@START borderRadiusStart {prefix="rounded-start" extend_type_name="CSS.Property.BorderRadius" extend_type_value="none"}
+rounded-start
+rounded-start-0
+rounded-start-1
+rounded-start-2
+rounded-start-3
+rounded-start-4
+rounded-start-5
+rounded-start-circle
+rounded-start-pill
+@END
+
+@START visibility {extend_type_value="visible,invisible" extend_type_name="CSS.Property.Visibility" extend_type_value="none"}
+visible
+invisible
+@END
+
+@START zIndex {prefix="z" extend_type_name="CSS.Property.ZIndex" extend_type_value="none"}
+z-n1
+z-0
+z-1
+z-2
+z-3
+@END
+
+# from: @media print
+@START displayPrint {prefix="d-print"}
+d-print-inline
+d-print-inline-block
+d-print-block
+d-print-grid
+d-print-inline-grid
+d-print-table
+d-print-table-row
+d-print-table-cell
+d-print-flex
+d-print-inline-flex
+d-print-none
+@END
+
+# =========================================
+# Other props utitlies for CSS.Property
+# =========================================
+@START bgAttachment {sole_type_name="CSS.Property.BackgroundAttachment"}
+@END
+
+@START bgBlendMode {sole_type_name="CSS.Property.BackgroundBlendMode"}
+@END
+
+@START bgClip {sole_type_name="CSS.Property.BackgroundClip"}
+@END
+
+@START bgColor {sole_type_name="CSS.Property.BackgroundColor"}
+@END
+
+@START bgImage {sole_type_name="CSS.Property.BackgroundImage"}
+@END
+
+@START bgOrigin {sole_type_name="CSS.Property.BackgroundOrigin"}
+@END
+
+@START bgPosition {sole_type_name="CSS.Property.BackgroundPosition"}
+@END
+
+@START bgPositionX {sole_type_name="CSS.Property.BackgroundPositionX"}
+@END
+
+@START bgPositionY {sole_type_name="CSS.Property.BackgroundPositionY"}
+@END
+
+@START bgRepeat {sole_type_name="CSS.Property.BackgroundRepeat"}
+@END
+
+@START bgSize {sole_type_name="CSS.Property.BackgroundSize"}
+@END
+
+@START objectPosition {sole_type_name="CSS.Property.ObjectPosition"}
+@END
+
+@START borderBlock {sole_type_name="CSS.Property.BorderBlock"}
+@END
+
+@START borderImage {sole_type_name="CSS.Property.BorderImage"}
+@END
+
+@START borderSpacing {sole_type_name="CSS.Property.BorderSpacing"}
+@END
+
+@START borderCollapse {sole_type_name="CSS.Property.BorderCollapse"}
+@END
+
+@START borderInline {sole_type_name="CSS.Property.BorderInline"}
+@END
+
+@START borderStyle {sole_type_name="CSS.Property.BorderStyle"}
+@END
+
+@START flexBasis {sole_type_name="CSS.Property.FlexBasis"}
+@END
+
+@START flexDirection {sole_type_name="CSS.Property.FlexDirection"}
+@END
+
+@START flexFlow {sole_type_name="CSS.Property.FlexFlow"}
+@END
+
+@START flexGrow {sole_type_name="CSS.Property.FlexGrow"}
+@END
+
+@START flexShrink {sole_type_name="CSS.Property.FlexShrink"}
+@END
+
+@START flexWrap {sole_type_name="boolean" extend_type_name="CSS.Property.FlexWrap"}
+@END
+
+@START transform {sole_type_name="CSS.Property.Transform"}
+@END
+
+@START translate {sole_type_name="CSS.Property.Translate"}
+@END
+
+@START rotate {sole_type_name="CSS.Property.Rotate"}
+@END
+
+@START scale {sole_type_name="CSS.Property.Scale"}
+@END
+
+@START transition {sole_type_name="CSS.Property.Transition"}
+@END
+
+@START textIndent {sole_type_name="CSS.Property.TextIndent"}
+@END
+
+@START textJustify {sole_type_name="CSS.Property.TextJustify"}
+@END
+
+@START textOrientation {sole_type_name="CSS.Property.TextOrientation"}
+@END
+
+@START textOverflow {sole_type_name="CSS.Property.TextOverflow"}
+@END
+
+@START textShadow {sole_type_name="CSS.Property.TextShadow"}
+@END
+
+@START scrollBehavior {sole_type_name="CSS.Property.ScrollBehavior"}
+@END
+
+@START scrollMargin {sole_type_name="CSS.Property.ScrollMargin"}
+@END
+
+@START scrollPadding {sole_type_name="CSS.Property.ScrollPadding"}
+@END
+
+@START scrollbarColor {sole_type_name="CSS.Property.ScrollbarColor"}
+@END
+
+@START zoom {sole_type_name="CSS.Property.Zoom"}
+@END
+
+@START font {sole_type_name="CSS.Property.Font"}
+@END
+
+@START fontFamily {sole_type_name="CSS.Property.FontFamily"}
+@END
+
+@START fontKerning {sole_type_name="CSS.Property.FontKerning"}
+@END
+
+@START fontSizeAdjust {sole_type_name="CSS.Property.FontSizeAdjust"}
+@END
+
+@START fontStretch {sole_type_name="CSS.Property.FontStretch"}
+@END
+
+@START fontVariant {sole_type_name="CSS.Property.FontVariant"}
+@END
+
+@START fontVariantCaps {sole_type_name="CSS.Property.FontVariantCaps"}
+@END
+
+@START inset {sole_type_name="CSS.Property.Inset"}
+@END
+
+@START insetBlock {sole_type_name="CSS.Property.InsetBlock"}
+@END
+
+@START insetInline {sole_type_name="CSS.Property.InsetInline"}
+@END
+
+@START color {sole_type_name="CSS.Property.Color"}
+@END
