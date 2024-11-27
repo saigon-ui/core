@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Wrapper = styled.div`
   --text-yellow: #ffc800;
+  --text-margin: 46px;
 
   .gradient {
     position: fixed;
@@ -82,14 +83,14 @@ const Wrapper = styled.div`
 
     .logo {
       width: 100%;
-      margin-top: 46px;
+      margin-top: var(--text-margin);
       text-align: center;
       filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25));
     }
 
     .info {
       margin: auto;
-      margin-top: 46px;
+      margin-top: var(--text-margin);
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -98,19 +99,19 @@ const Wrapper = styled.div`
       h1 {
         text-align: center;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 24px;
       }
 
       h4 {
-        margin-top: 46px;
+        margin-top: var(--text-margin);
         text-align: center;
-        font-size: 17px;
+        font-size: 16px;
       }
 
       p {
-        margin-top: 46px;
+        margin-top: var(--text-margin);
         text-align: center;
-        font-size: 17px;
+        font-size: 16px;
         font-style: italic;
         color: darkgreen;
       }
@@ -123,7 +124,7 @@ const Wrapper = styled.div`
         color: darkgreen;
 
         section {
-          width: 360px;
+          width: 260px;
           margin: auto;
           border-radius: 1rem;
           border: 1px solid darkgreen;
@@ -137,6 +138,7 @@ const Wrapper = styled.div`
           text-align: left;
           opacity: 1;
           transition: all 200ms ease-in-out;
+          font-size: 22px;
 
           &.hide {
             opacity: 0;
@@ -201,8 +203,8 @@ export default function MaintenancePage() {
             </h1>
             <h4>
               Powerful, extensible, and prebuilt front-end components. Build and
-              customize with Sass, utilize the prebuilt grid system and
-              components, and easily bring projects to life.
+              customize with Sass, utilize the grid system and rich components,
+              and easily bring projects to life.
             </h4>
             <p>
               “<span style={{ color: "var(--text-yellow)" }}>Saigon UI</span>

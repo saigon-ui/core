@@ -1,0 +1,58 @@
+{
+  "name": "@saigon-ui/core",
+  "version": "1.0.0",
+  "description": "Bootstrap enthusiast core UI library for React",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "npm test"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@floating-ui/react": "^0.26.24",
+    "classnames": "^2.3.2",
+    "csstype": "^3.1.3",
+    "tinycolor2": "^1.6.0"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.14.8",
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "directory": "lib"
+  },
+  "release": {
+    "conventionalCommits": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saigon-ui/core.git"
+  },
+  "keywords": [
+    "react",
+    "ecosystem-react",
+    "react-component",
+    "bootstrap",
+    "framework",
+    "css-framework",
+    "typescript",
+    "frontend"    
+  ],
+  "author": {
+    "name": "Quoc T. Pham",
+    "email": "thanhquocuit@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saigon-ui/core/issues"
+  },
+  "homepage": "https://github.com/saigon-ui/core#readme"
+}

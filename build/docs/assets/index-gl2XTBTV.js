@@ -4141,6 +4141,7 @@ Bootstrap includes several predefined button styles, each serving its own semant
 \`\`\`
 `,l9e=[{path:"component/alerts",md:i9e},{path:"component/buttons",md:a9e}],c9e=[{path:"",element:l.jsx(qY,{})},{path:"docs/*",element:l.jsx(yY,{}),children:l9e.map(({path:e,md:t},n)=>({path:e,element:l.jsx(o9e,{md:t},n)}))}],u9e=e=>p.createElement("svg",{width:120,height:120,viewBox:"0 0 120 120",xmlns:"http://www.w3.org/2000/svg","xmlns:svg":"http://www.w3.org/2000/svg",...e},p.createElement("path",{id:"red",fill:"#ff0000",d:"m25.67,13.72c-6.7,0 -11.67,5.86 -11.44,12.22c0.21,6.11 -0.07,14.03 -2.06,20.48c-2,6.48 -5.38,10.57 -10.9,11.1l0,5.95c5.52,0.53 8.9,4.63 10.9,11.1c1.99,6.45 2.27,14.37 2.06,20.48c-0.23,6.36 4.74,12.22 11.44,12.22l68.67,0c6.7,0 11.66,-5.86 11.44,-12.22c-0.21,-6.11 0.06,-14.03 2.06,-20.48c2,-6.48 5.37,-10.58 10.89,-11.1l0,-5.95c-5.52,-0.53 -8.89,-4.63 -10.89,-11.1c-1.99,-6.45 -2.27,-14.37 -2.06,-20.48c0.22,-6.36 -4.74,-12.22 -11.44,-12.22l-68.67,0z"}),p.createElement("path",{id:"yellow",fill:"#ffff00",clipRule:"evenodd",d:"m25.53,13.48c-6.73,0 -11.72,5.89 -11.49,12.28c0.21,6.14 -0.07,14.1 -2.07,20.58c-2.01,6.51 -5.4,10.62 -10.95,11.15l0,5.98c5.55,0.53 8.94,4.65 10.95,11.15c2,6.48 2.28,14.44 2.07,20.58c-0.23,6.39 4.76,12.28 11.49,12.28l68.99,0c6.73,0 11.71,-5.89 11.49,-12.28c-0.21,-6.14 0.06,-14.1 2.07,-20.58c2.01,-6.51 5.39,-10.63 10.94,-11.15l0,-5.98c-5.55,-0.53 -8.93,-4.65 -10.94,-11.15c-2,-6.48 -2.28,-14.44 -2.07,-20.58c0.22,-6.39 -4.76,-12.28 -11.49,-12.28l-68.99,0zm29.18,38.29l0.12,-10.24c-0.13,-2.13 -2.57,-7.97 -8.3,-8l-5.9,0.1c-4.3,0.1 -7.6,4 -8.5,5.9c-0.9,1.9 -1.02,6.26 -0.52,8.86c0.5,2.6 2.04,8.46 4.82,11.64c3.1,3.5 8.93,10.7 9.5,14.5c-0.03,1.7 0,2.53 0,4c0.1,2.67 -6.1,2.33 -6.1,-0.1l-0.3,-9.26l-8.17,-0.02c0,2.56 0.09,9.12 0.19,11.69c1.67,5.99 5.08,7.39 11.98,7.69c9.2,-0.1 11.6,-5.6 11.8,-10.7c0,-3.7 -0.5,-6.8 -2,-9.5c-1.5,-2.7 -3.9,-7.3 -6.8,-10.7c-2.9,-3.4 -5.7,-9.2 -5.8,-10.9c-0.1,-1.7 -0.4,-3.5 0.8,-4.6c1.2,-1.1 3.58,-0.97 4.4,0.1c0.82,1.07 0.73,2.13 0.75,3.8l-0.07,5.74l8.1,0zm32.95,36.78l-7.98,0.08l-0.07,-1.61c-0.85,0.8 -1.65,1.71 -5.94,1.63c-6.93,-0.02 -9.75,-5.3 -9.85,-9.4c-0.2,-3.3 -0.5,-31.3 -0.35,-36c0.05,-3.2 3.85,-7.7 6.9,-8.8c2.65,-0.9 6.05,-1.4 9.7,-0.3c3.65,1.1 7.55,5.3 7.5,7.3l0,10.4l-8.1,0c0.05,-3.1 -0.05,-6.4 -0.1,-8.6c-0.15,-2 -6.05,-2.1 -6.1,0.2c0.03,0.81 -0.13,34.17 -0.1,34.8c-0.05,2.8 6.35,2.9 6.3,0.5l0.04,-9.58l-4.44,0.08l0,-5.9l12.55,0l0.05,25.2l-0.01,0z",fillRule:"evenodd"})),d9e=tn.div`
   --text-yellow: #ffc800;
+  --text-margin: 46px;
 
   .gradient {
     position: fixed;
@@ -4218,14 +4219,14 @@ Bootstrap includes several predefined button styles, each serving its own semant
 
     .logo {
       width: 100%;
-      margin-top: 46px;
+      margin-top: var(--text-margin);
       text-align: center;
       filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25));
     }
 
     .info {
       margin: auto;
-      margin-top: 46px;
+      margin-top: var(--text-margin);
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -4234,19 +4235,19 @@ Bootstrap includes several predefined button styles, each serving its own semant
       h1 {
         text-align: center;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 24px;
       }
 
       h4 {
-        margin-top: 46px;
+        margin-top: var(--text-margin);
         text-align: center;
-        font-size: 17px;
+        font-size: 16px;
       }
 
       p {
-        margin-top: 46px;
+        margin-top: var(--text-margin);
         text-align: center;
-        font-size: 17px;
+        font-size: 16px;
         font-style: italic;
         color: darkgreen;
       }
@@ -4259,7 +4260,7 @@ Bootstrap includes several predefined button styles, each serving its own semant
         color: darkgreen;
 
         section {
-          width: 360px;
+          width: 260px;
           margin: auto;
           border-radius: 1rem;
           border: 1px solid darkgreen;
@@ -4273,6 +4274,7 @@ Bootstrap includes several predefined button styles, each serving its own semant
           text-align: left;
           opacity: 1;
           transition: all 200ms ease-in-out;
+          font-size: 22px;
 
           &.hide {
             opacity: 0;
@@ -4304,4 +4306,4 @@ Bootstrap includes several predefined button styles, each serving its own semant
       }
     }
   }
-`;function h9e(){function e(){const[t,n]=p.useState(0),r=p.useRef({id:0});p.useEffect(()=>{clearInterval(r.current.id),r.current.id=setInterval(()=>{n(i=>i+1)},1e3)},[]);let s="",o=t%5;for(let i=0;i<o;i++)s+=".";return l.jsx("h1",{className:s?"":"hide",children:`Coming soon ${s}`})}return l.jsxs(d9e,{children:[l.jsxs("div",{className:"section",children:[l.jsx("div",{className:"logo",children:l.jsx(u9e,{width:"180px",height:"180px"})}),l.jsxs("div",{className:"info",children:[l.jsxs("div",{children:[l.jsxs("h1",{children:["Build fast, flexible, responsive sites with"," ",l.jsx("span",{style:{color:"var(--text-yellow)"},children:"Saigon UI"}),"."]}),l.jsx("h4",{children:"Powerful, extensible, and prebuilt front-end components. Build and customize with Sass, utilize the prebuilt grid system and components, and easily bring projects to life."}),l.jsxs("p",{children:["“",l.jsx("span",{style:{color:"var(--text-yellow)"},children:"Saigon UI"})," = ",l.jsx("span",{style:{color:"#41e0fd"},children:"React"}),"(",l.jsx("span",{style:{color:"#712cf9"},children:"Bootstrap"})," + ",l.jsx("span",{style:{color:"#D26AC2"},children:"styled"}),")”"]})]}),l.jsx("div",{className:"coming-soon",children:l.jsxs("section",{children:[l.jsx("h1",{style:{marginLeft:5},children:"$"})," ",l.jsx(e,{})]})})]})]}),l.jsxs("div",{className:"gradient",children:[l.jsx("div",{className:"green"}),l.jsx("div",{className:"red"}),l.jsx("div",{className:"blue"})]})]})}const f9e=hN([{path:"/coming-soon",element:l.jsx(h9e,{}),children:c9e},{path:"*",element:l.jsx(aN,{to:"/coming-soon",replace:!0})}]);cq(document.getElementById("root")).render(l.jsx(p.StrictMode,{children:l.jsx(qN,{router:f9e})}))});export default p9e();
+`;function h9e(){function e(){const[t,n]=p.useState(0),r=p.useRef({id:0});p.useEffect(()=>{clearInterval(r.current.id),r.current.id=setInterval(()=>{n(i=>i+1)},1e3)},[]);let s="",o=t%5;for(let i=0;i<o;i++)s+=".";return l.jsx("h1",{className:s?"":"hide",children:`Coming soon ${s}`})}return l.jsxs(d9e,{children:[l.jsxs("div",{className:"section",children:[l.jsx("div",{className:"logo",children:l.jsx(u9e,{width:"180px",height:"180px"})}),l.jsxs("div",{className:"info",children:[l.jsxs("div",{children:[l.jsxs("h1",{children:["Build fast, flexible, responsive sites with"," ",l.jsx("span",{style:{color:"var(--text-yellow)"},children:"Saigon UI"}),"."]}),l.jsx("h4",{children:"Powerful, extensible, and prebuilt front-end components. Build and customize with Sass, utilize the grid system and rich components, and easily bring projects to life."}),l.jsxs("p",{children:["“",l.jsx("span",{style:{color:"var(--text-yellow)"},children:"Saigon UI"})," = ",l.jsx("span",{style:{color:"#41e0fd"},children:"React"}),"(",l.jsx("span",{style:{color:"#712cf9"},children:"Bootstrap"})," + ",l.jsx("span",{style:{color:"#D26AC2"},children:"styled"}),")”"]})]}),l.jsx("div",{className:"coming-soon",children:l.jsxs("section",{children:[l.jsx("h1",{style:{marginLeft:5},children:"$"})," ",l.jsx(e,{})]})})]})]}),l.jsxs("div",{className:"gradient",children:[l.jsx("div",{className:"green"}),l.jsx("div",{className:"red"}),l.jsx("div",{className:"blue"})]})]})}const f9e=hN([{path:"/coming-soon",element:l.jsx(h9e,{}),children:c9e},{path:"*",element:l.jsx(aN,{to:"/coming-soon",replace:!0})}]);cq(document.getElementById("root")).render(l.jsx(p.StrictMode,{children:l.jsx(qN,{router:f9e})}))});export default p9e();
