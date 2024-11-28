@@ -94,23 +94,29 @@ export default (params: any) => {
     `\n=========================\n    NODE_ENV=${process.env.NODE_ENV}\n    BUILT_ENV=${BUILT_ENV}\n=========================\n`
   );
 
-  return defineConfig({
-    plugins: [
-      react(),
-      svgr({
-        include: "**/*.svg",
-        svgrOptions: {
-          exportType: "default",
-        },
-      }),
-      loadTextFile(),
-      tsconfigPaths(),
+  const plugins = [
+    react(),
+    svgr({
+      include: "**/*.svg",
+      svgrOptions: {
+        exportType: "default",
+      },
+    }),
+    loadTextFile(),
+    tsconfigPaths(),
+  ];
+  if (BUILT_ENV != "docs") {
+    plugins.push(
       dts({
         insertTypesEntry: true,
         rollupTypes: true,
         tsconfigPath: resolve(__dirname, "tsconfig.lib.json"),
-      }),
-    ],
+      })
+    );
+  }
+
+  return defineConfig({
+    plugins,
     build: BUILT_ENV == "docs" ? defineDocsBuild : defineLibBuild,
   });
 };
