@@ -19,7 +19,7 @@ export type RowProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
 
   /**
    * Use these row columns classes to quickly create basic grid layouts or to control your card layouts.
@@ -48,7 +48,7 @@ export type ColProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
 
   /**
    * Apply property on viewports sized XS (extra small) or wider.
@@ -67,7 +67,7 @@ export type StackProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
 
   /**
    * Applying Bootstrap `flex-fill` classname

@@ -999,7 +999,7 @@ export declare type ColProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
   /**
    * Apply property on viewports sized XS (extra small) or wider.
    * @NOTE: xs = 0px
@@ -3201,7 +3201,7 @@ export declare type RowProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
   /**
    * Use these row columns classes to quickly create basic grid layouts or to control your card layouts.
    * @default undefined
@@ -3567,7 +3567,7 @@ export declare type StackProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
   /**
    * Applying Bootstrap `flex-fill` classname
    */
@@ -4250,7 +4250,7 @@ export declare type ToggleButtonProp = Partial<{
    * The .btn classes are designed to be used with the <button> element. However, you can also use these classes on <a> or <input> elements (though some browsers may apply a slightly different rendering).
    * @default button
    */
-  as: "button" | "input" | React.ReactElement;
+  as: "button" | "input" | React.ComponentType;
   /**
    * Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.
    * @param {ThemeColor | 'link'} primary
@@ -4433,7 +4433,7 @@ export declare type TypographyProp = Partial<{
   /**
    * All HTML headings, <h1> through <h6>, are available.
    */
-  as: "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | React.ReactElement;
+  as: "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | React.ComponentType;
   /**
    * Display headings are configured via the $display-font-sizes
    */

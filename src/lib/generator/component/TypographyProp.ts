@@ -2,7 +2,7 @@ export type TypographyProp = Partial<{
   /**
    * All HTML headings, <h1> through <h6>, are available.
    */
-  as: "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | React.ReactElement;
+  as: "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | React.ComponentType;
 
   /**
    * Display headings are configured via the $display-font-sizes

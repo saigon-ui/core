@@ -6,7 +6,7 @@ export type ToggleButtonProp = Partial<{
    * The .btn classes are designed to be used with the <button> element. However, you can also use these classes on <a> or <input> elements (though some browsers may apply a slightly different rendering).
    * @default button
    */
-  as: "button" | "input" | React.ReactElement;
+  as: "button" | "input" | React.ComponentType;
 
   /**
    * Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.

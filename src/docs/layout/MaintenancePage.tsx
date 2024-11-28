@@ -189,6 +189,12 @@ export default function MaintenancePage() {
 
     return <h1 className={txt ? "" : "hide"}>{`Coming soon ${txt}`}</h1>;
   }
+
+  /*
+  Saigon UI is a React UI framework designed to simplify the development of web applications. 
+  It offers pre-designed components and tools to enhance user interface creation while prioritizing 
+  customization and ease of use. Check the site for detailed documentation and features.
+   */
   return (
     <Wrapper>
       <div className="section">

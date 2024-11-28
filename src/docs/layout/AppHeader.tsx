@@ -1,5 +1,5 @@
 import AppLogo from "@asset/image/sg_logo.svg";
-import { Div, Navbar, NavbarProps, Stack } from "@build_lib/core";
+import { Div, Navbar, Stack } from "@build_lib/core";
 import {
   IconAutoMode,
   IconCheck,
@@ -33,16 +33,12 @@ const IconNPM = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 27.23 27.23"
+      viewBox="7 7 15 15"
       aria-hidden="true"
       width="20"
       height="20"
     >
-      <rect fill="#333333" width="27.23" height="27.23" rx="2"></rect>
-      <polygon
-        fill="var(--docs-primary)"
-        points="5.8 21.75 13.66 21.75 13.67 9.98 17.59 9.98 17.58 21.76 21.51 21.76 21.52 6.06 5.82 6.04 5.8 21.75"
-      ></polygon>
+      <polygon points="5.8 21.75 13.66 21.75 13.67 9.98 17.59 9.98 17.58 21.76 21.51 21.76 21.52 6.06 5.82 6.04 5.8 21.75"></polygon>
     </svg>
   );
 };
@@ -51,7 +47,7 @@ const VerticleBar = styled.div`
   width: 5px;
   height: 24px;
   margin-top: 10px;
-  border-left: 1px solid red;
+  border-left: 2px solid var(--docs-navy-2);
 `;
 
 const ThemeItem: FC<{
@@ -94,9 +90,9 @@ export default function AppHeader() {
 
   useEffect(() => {
     const handler = () => {
-      if (!hasScroll && window.scrollY > 32) {
+      if (!hasScroll && window.scrollY > 34) {
         setHasScroll(true);
-      } else if (hasScroll && window.scrollY < 32) {
+      } else if (hasScroll && window.scrollY < 12) {
         setHasScroll(false);
       }
     };
@@ -108,22 +104,13 @@ export default function AppHeader() {
   return (
     <Navbar
       expand="lg"
-      className="app-navbar bg-body-tertiary"
+      className={`app-navbar ${hasScroll ? " scrolled" : ""}`}
       sticky="top"
-      style={{
-        boxShadow: hasScroll ? "0px 5px 5px 0px rgba(0,0,0,0.25)" : "unset",
-      }}
     >
-      <Div width="var(--side-bar-width)" bg="red">
-        <Navbar.Brand href="/" ms="2.5rem">
-          <AppLogo width="42px" height="42px" color="var(--docs-primary)" />
-          <Div
-            as="span"
-            ms="2"
-            fontWeight="bold"
-            lineHeight="12px"
-            color="var(--docs-primary)"
-          >
+      <Div width="var(--side-bar-width)">
+        <Navbar.Brand className="hstack" href="/">
+          <AppLogo className="logo-svg" />
+          <Div as="span" className="logo-text">
             Saigon UI
           </Div>
         </Navbar.Brand>
@@ -138,16 +125,21 @@ export default function AppHeader() {
           <Navbar.Item>
             <Navbar.FormControl
               placeholder="Type keywords..."
-              width="350px"
-              startIcon={<IconSearch opacity={0.5} />}
+              width="var(--side-bar-width)"
+              startIcon={<IconSearch />}
             />
           </Navbar.Item>
         </Navbar.Nav>
-      </Navbar.Collapse>
 
-      <Navbar.Collapse className="justify-content-end me-3">
         {/* App main menu */}
         <Navbar.Nav>
+          <Navbar.Link
+            as={(p) => (
+              <Link to="/demo" {...p}>
+                Demo
+              </Link>
+            )}
+          />
           <Navbar.Link
             as={(p) => (
               <Link to="/docs/5.3/getting-started/introduction" {...p}>
@@ -155,15 +147,13 @@ export default function AppHeader() {
               </Link>
             )}
           />
-          <VerticleBar />
           <Navbar.Link
             as={(p) => (
-              <Link to="/example" {...p}>
-                Example
+              <Link to="/theme" {...p}>
+                Icons
               </Link>
             )}
           />
-          <VerticleBar />
           <Navbar.Link
             as={(p) => (
               <Link to="/theme" {...p}>
@@ -171,7 +161,6 @@ export default function AppHeader() {
               </Link>
             )}
           />
-          <VerticleBar />
           <Navbar.Link
             as={(p) => (
               <Link to="/resources" {...p}>
@@ -179,9 +168,9 @@ export default function AppHeader() {
               </Link>
             )}
           />
-        </Navbar.Nav>
-        {/** Login avatar */}
-        <Navbar.Nav>
+
+          {/** External links */}
+          <VerticleBar />
           <Navbar.Link href="#">
             <IconGithub />
           </Navbar.Link>
@@ -190,8 +179,10 @@ export default function AppHeader() {
           </Navbar.Link>
           <VerticleBar />
           <ThemeOptions />
+
+          {/** Login avatar */}
           <VerticleBar />
-          <Navbar.Text>
+          <Navbar.Text me="2rem">
             Hi, <a href="#login">Quoc</a>
           </Navbar.Text>
         </Navbar.Nav>

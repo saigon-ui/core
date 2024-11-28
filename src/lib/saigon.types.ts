@@ -124,1036 +124,1547 @@ export type Responsive<Props> = Props | Breakpoint<Props>;
 
 // Generated code insertion start here
 
-
 export type SpacingProps = Partial<{
-        
-/**
-            * `m` - for classes that set `margin`
-    * @param {string} m '0'|'1'|'2'|'3'|'4'|'5'|'auto', (CSS.Property.Margin & Record<never, never>), "none"
-        */
-m: Responsive<'0'|'1'|'2'|'3'|'4'|'5'|'auto' | (CSS.Property.Margin & Record<never, never>) | "none">;
+  /**
+   * `m` - for classes that set `margin`
+   * @param {string} m '0'|'1'|'2'|'3'|'4'|'5'|'auto', (CSS.Property.Margin & Record<never, never>), "none"
+   */
+  m: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "auto"
+    | (CSS.Property.Margin & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `mb` - for classes that set `margin-bottom`.
-    * @param {string} mb "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginBottom & Record<never, never>), "none"
-        */
-mb: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | "auto" | (CSS.Property.MarginBottom & Record<never, never>) | "none">;
+  /**
+   * `mb` - for classes that set `margin-bottom`.
+   * @param {string} mb "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginBottom & Record<never, never>), "none"
+   */
+  mb: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "auto"
+    | (CSS.Property.MarginBottom & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `me` - for classes that set `margin-right`.
-    * @param {string} me "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginRight & Record<never, never>), "none"
-        */
-me: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | "auto" | (CSS.Property.MarginRight & Record<never, never>) | "none">;
+  /**
+   * `me` - for classes that set `margin-right`.
+   * @param {string} me "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginRight & Record<never, never>), "none"
+   */
+  me: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "auto"
+    | (CSS.Property.MarginRight & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `ms` - for classes that set `margin-left`.
-    * @param {string} ms "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginLeft & Record<never, never>), "none"
-        */
-ms: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | "auto" | (CSS.Property.MarginLeft & Record<never, never>) | "none">;
+  /**
+   * `ms` - for classes that set `margin-left`.
+   * @param {string} ms "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginLeft & Record<never, never>), "none"
+   */
+  ms: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "auto"
+    | (CSS.Property.MarginLeft & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `mt` - for classes that set `margin-top`.
-    * @param {string} mt "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginTop & Record<never, never>), "none"
-        */
-mt: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | "auto" | (CSS.Property.MarginTop & Record<never, never>) | "none">;
+  /**
+   * `mt` - for classes that set `margin-top`.
+   * @param {string} mt "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginTop & Record<never, never>), "none"
+   */
+  mt: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "auto"
+    | (CSS.Property.MarginTop & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `mx` - for classes that set `margin-left` and `margin-right` equally.
-    * @param {string} mx "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginLeft & Record<never, never>), (CSS.Property.MarginRight & Record<never, never>), "none"
-        */
-mx: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | "auto" | (CSS.Property.MarginLeft & Record<never, never>) | (CSS.Property.MarginRight & Record<never, never>) | "none">;
+  /**
+   * `mx` - for classes that set `margin-left` and `margin-right` equally.
+   * @param {string} mx "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginLeft & Record<never, never>), (CSS.Property.MarginRight & Record<never, never>), "none"
+   */
+  mx: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "auto"
+    | (CSS.Property.MarginLeft & Record<never, never>)
+    | (CSS.Property.MarginRight & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `my` - for classes that set `margin-top` and `margin-bottom` equally.
-    * @param {string} my "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginTop & Record<never, never>), (CSS.Property.MarginBottom & Record<never, never>), "none"
-        */
-my: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | "auto" | (CSS.Property.MarginTop & Record<never, never>) | (CSS.Property.MarginBottom & Record<never, never>) | "none">;
+  /**
+   * `my` - for classes that set `margin-top` and `margin-bottom` equally.
+   * @param {string} my "0", "1", "2", "3", "4", "5", "auto", (CSS.Property.MarginTop & Record<never, never>), (CSS.Property.MarginBottom & Record<never, never>), "none"
+   */
+  my: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "auto"
+    | (CSS.Property.MarginTop & Record<never, never>)
+    | (CSS.Property.MarginBottom & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `p` - for classes that set `padding`
-    * @param {string} p '0'|'1'|'2'|'3'|'4'|'5', (CSS.Property.Padding & Record<never, never>), "none"
-        */
-p: Responsive<'0'|'1'|'2'|'3'|'4'|'5' | (CSS.Property.Padding & Record<never, never>) | "none">;
+  /**
+   * `p` - for classes that set `padding`
+   * @param {string} p '0'|'1'|'2'|'3'|'4'|'5', (CSS.Property.Padding & Record<never, never>), "none"
+   */
+  p: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.Padding & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `pb` - for classes that set `padding-bottom`.
-    * @param {string} pb "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingBottom & Record<never, never>), "none"
-        */
-pb: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.PaddingBottom & Record<never, never>) | "none">;
+  /**
+   * `pb` - for classes that set `padding-bottom`.
+   * @param {string} pb "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingBottom & Record<never, never>), "none"
+   */
+  pb: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.PaddingBottom & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `pe` - for classes that set `padding-left`.
-    * @param {string} pe "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingRight & Record<never, never>), "none"
-        */
-pe: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.PaddingRight & Record<never, never>) | "none">;
+  /**
+   * `pe` - for classes that set `padding-left`.
+   * @param {string} pe "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingRight & Record<never, never>), "none"
+   */
+  pe: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.PaddingRight & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `ps` - for classes that set `padding-left`.
-    * @param {string} ps "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingLeft & Record<never, never>), "none"
-        */
-ps: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.PaddingLeft & Record<never, never>) | "none">;
+  /**
+   * `ps` - for classes that set `padding-left`.
+   * @param {string} ps "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingLeft & Record<never, never>), "none"
+   */
+  ps: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.PaddingLeft & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `pt` - for classes that set `padding-top`.
-    * @param {string} pt "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingTop & Record<never, never>), "none"
-        */
-pt: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.PaddingTop & Record<never, never>) | "none">;
+  /**
+   * `pt` - for classes that set `padding-top`.
+   * @param {string} pt "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingTop & Record<never, never>), "none"
+   */
+  pt: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.PaddingTop & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `px` - for classes that set `padding-left` and `padding-right` equally.
-    * @param {string} px "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingLeft & Record<never, never>), (CSS.Property.PaddingRight & Record<never, never>)
-        */
-px: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.PaddingLeft & Record<never, never>) | (CSS.Property.PaddingRight & Record<never, never>)>;
+  /**
+   * `px` - for classes that set `padding-left` and `padding-right` equally.
+   * @param {string} px "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingLeft & Record<never, never>), (CSS.Property.PaddingRight & Record<never, never>)
+   */
+  px: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.PaddingLeft & Record<never, never>)
+    | (CSS.Property.PaddingRight & Record<never, never>)
+  >;
 
-/**
-            * `py` - for classes that set `padding-top` and `padding-bottom` equally.
-    * @param {string} py "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingTop & Record<never, never>), (CSS.Property.PaddingBottom & Record<never, never>), "none"
-        */
-py: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.PaddingTop & Record<never, never>) | (CSS.Property.PaddingBottom & Record<never, never>) | "none">;
-        }>;
-
+  /**
+   * `py` - for classes that set `padding-top` and `padding-bottom` equally.
+   * @param {string} py "0", "1", "2", "3", "4", "5", (CSS.Property.PaddingTop & Record<never, never>), (CSS.Property.PaddingBottom & Record<never, never>), "none"
+   */
+  py: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.PaddingTop & Record<never, never>)
+    | (CSS.Property.PaddingBottom & Record<never, never>)
+    | "none"
+  >;
+}>;
 
 export type PositionProps = Partial<{
-        
-/**
-            * Setting `bottom: *` css property.
-    * @param {string} bottom "0", "50", "100", (CSS.Property.Bottom & Record<never, never>), "none"
-        */
-bottom: Responsive<"0" | "50" | "100" | (CSS.Property.Bottom & Record<never, never>) | "none">;
+  /**
+   * Setting `bottom: *` css property.
+   * @param {string} bottom "0", "50", "100", (CSS.Property.Bottom & Record<never, never>), "none"
+   */
+  bottom: Responsive<
+    "0" | "50" | "100" | (CSS.Property.Bottom & Record<never, never>) | "none"
+  >;
 
-/**
-            * Setting `right: *` css property.
-    * @param {string} end "0", "50", "100", (CSS.Property.Right & Record<never, never>), "none"
-        */
-end: Responsive<"0" | "50" | "100" | (CSS.Property.Right & Record<never, never>) | "none">;
+  /**
+   * Setting `right: *` css property.
+   * @param {string} end "0", "50", "100", (CSS.Property.Right & Record<never, never>), "none"
+   */
+  end: Responsive<
+    "0" | "50" | "100" | (CSS.Property.Right & Record<never, never>) | "none"
+  >;
 
-/**
-            * Position an element at the top of the viewport, or at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.
-    * @param {string} fixed "top", "bottom", "none"
-        */
-fixed: Responsive<"top" | "bottom" | "none">;
+  /**
+   * Position an element at the top of the viewport, or at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.
+   * @param {string} fixed "top", "bottom", "none"
+   */
+  fixed: Responsive<"top" | "bottom" | "none">;
 
-/**
-            * Toggle floats on any element, across any breakpoint, using our responsive float utilities.
-    * @param {string} float "start", "end", "none"
-        */
-float: Responsive<"start" | "end" | "none">;
+  /**
+   * Toggle floats on any element, across any breakpoint, using our responsive float utilities.
+   * @param {string} float "start", "end", "none"
+   */
+  float: Responsive<"start" | "end" | "none">;
 
-/**
-          * The `inset` property sets the distance between an element and the parent element.
-  *
-  * **Note:** For this property to take effect it has to have the position property specified.
-  * @param {CSS.Property.Inset} inset CSS.Property.Inset
-        */
-inset: Responsive<CSS.Property.Inset>;
+  /**
+   * The `inset` property sets the distance between an element and the parent element.
+   *
+   * **Note:** For this property to take effect it has to have the position property specified.
+   * @param {CSS.Property.Inset} inset CSS.Property.Inset
+   */
+  inset: Responsive<CSS.Property.Inset>;
 
-/**
-          * The `inset-block` property sets the distance between an element and the parent element in the block direction.
-  *
-  * **Note:** For this property to take effect it has to have the position property specified.
-  * @param {CSS.Property.InsetBlock} insetBlock CSS.Property.InsetBlock
-        */
-insetBlock: Responsive<CSS.Property.InsetBlock>;
+  /**
+   * The `inset-block` property sets the distance between an element and the parent element in the block direction.
+   *
+   * **Note:** For this property to take effect it has to have the position property specified.
+   * @param {CSS.Property.InsetBlock} insetBlock CSS.Property.InsetBlock
+   */
+  insetBlock: Responsive<CSS.Property.InsetBlock>;
 
-/**
-          * The `inset-inline` property sets the distance between an element and the parent element in the inline direction.
-  *
-  * **Note:** For this property to take effect it has to have the position property specified.
-  * @param {CSS.Property.InsetInline} insetInline CSS.Property.InsetInline
-        */
-insetInline: Responsive<CSS.Property.InsetInline>;
+  /**
+   * The `inset-inline` property sets the distance between an element and the parent element in the inline direction.
+   *
+   * **Note:** For this property to take effect it has to have the position property specified.
+   * @param {CSS.Property.InsetInline} insetInline CSS.Property.InsetInline
+   */
+  insetInline: Responsive<CSS.Property.InsetInline>;
 
-/**
-            * Setting `left: *` css property.
-    * @param {string} start "0", "50", "100", (CSS.Property.Left & Record<never, never>), "none"
-        */
-left: Responsive<"0" | "50" | "100" | (CSS.Property.Left & Record<never, never>) | "none">;
+  /**
+   * Setting `left: *` css property.
+   * @param {string} start "0", "50", "100", (CSS.Property.Left & Record<never, never>), "none"
+   */
+  left: Responsive<
+    "0" | "50" | "100" | (CSS.Property.Left & Record<never, never>) | "none"
+  >;
 
-/**
-           * Use these helpers for quickly configuring the position of an element.
-    *
-    * **Fixed top** Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.
-    * 
-    * **Fixed bottom** Position an element at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.
-    * 
-    * **Sticky top** Position an element at the top of the viewport, from edge to edge, but only after you scroll past it.
-    * 
-    * **Sticky bottom** Position an element at the bottom of the viewport, from edge to edge, but only after you scroll past it.
-    * 
-    * @param {string} position "static", "relative", "absolute", "fixed", "sticky", "none"
-        */
-position: Responsive<"static" | "relative" | "absolute" | "fixed" | "sticky" | "none">;
+  /**
+   * Use these helpers for quickly configuring the position of an element.
+   *
+   * **Fixed top** Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.
+   *
+   * **Fixed bottom** Position an element at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.
+   *
+   * **Sticky top** Position an element at the top of the viewport, from edge to edge, but only after you scroll past it.
+   *
+   * **Sticky bottom** Position an element at the bottom of the viewport, from edge to edge, but only after you scroll past it.
+   *
+   * @param {string} position "static", "relative", "absolute", "fixed", "sticky", "none"
+   */
+  position: Responsive<
+    "static" | "relative" | "absolute" | "fixed" | "sticky" | "none"
+  >;
 
-/**
-            * Setting `right: *` css property.
-    * @param {string} end "0", "50", "100", (CSS.Property.Right & Record<never, never>), "none"
-        */
-right: Responsive<"0" | "50" | "100" | (CSS.Property.Right & Record<never, never>) | "none">;
+  /**
+   * Setting `right: *` css property.
+   * @param {string} end "0", "50", "100", (CSS.Property.Right & Record<never, never>), "none"
+   */
+  right: Responsive<
+    "0" | "50" | "100" | (CSS.Property.Right & Record<never, never>) | "none"
+  >;
 
-/**
-            * The `rotate` property defines a value for how much an element is rotated clockwise around z-axis. To rotate an element around x-axis or y-axis or in other ways, this must be defined.
-    * @param {CSS.Property.Rotate} rotate CSS.Property.Rotate
-        */
-rotate: Responsive<CSS.Property.Rotate>;
+  /**
+   * The `rotate` property defines a value for how much an element is rotated clockwise around z-axis. To rotate an element around x-axis or y-axis or in other ways, this must be defined.
+   * @param {CSS.Property.Rotate} rotate CSS.Property.Rotate
+   */
+  rotate: Responsive<CSS.Property.Rotate>;
 
-/**
-            * The `scale` property defines values for how much an element is scaled in x- and y-directions. You can also define how much an element is scaled in z-direction.
-    * @param {CSS.Property.Scale} scale CSS.Property.Scale
-        */
-scale: Responsive<CSS.Property.Scale>;
+  /**
+   * The `scale` property defines values for how much an element is scaled in x- and y-directions. You can also define how much an element is scaled in z-direction.
+   * @param {CSS.Property.Scale} scale CSS.Property.Scale
+   */
+  scale: Responsive<CSS.Property.Scale>;
 
-/**
-            * Setting `left: *` css property.
-    * @param {string} start "0", "50", "100", (CSS.Property.Left & Record<never, never>), "none"
-        */
-start: Responsive<"0" | "50" | "100" | (CSS.Property.Left & Record<never, never>) | "none">;
+  /**
+   * Setting `left: *` css property.
+   * @param {string} start "0", "50", "100", (CSS.Property.Left & Record<never, never>), "none"
+   */
+  start: Responsive<
+    "0" | "50" | "100" | (CSS.Property.Left & Record<never, never>) | "none"
+  >;
 
-/**
-            * Position an element at the top of the viewport, or bottom of the viewport, from edge to edge, but only after you scroll past it.
-    * @param {string} sticky "top", "bottom", "none"
-        */
-sticky: Responsive<"top" | "bottom" | "none">;
+  /**
+   * Position an element at the top of the viewport, or bottom of the viewport, from edge to edge, but only after you scroll past it.
+   * @param {string} sticky "top", "bottom", "none"
+   */
+  sticky: Responsive<"top" | "bottom" | "none">;
 
-/**
-            * Setting `top: *` css property.
-    * @param {string} top "0", "50", "100", (CSS.Property.Top & Record<never, never>), "none"
-        */
-top: Responsive<"0" | "50" | "100" | (CSS.Property.Top & Record<never, never>) | "none">;
+  /**
+   * Setting `top: *` css property.
+   * @param {string} top "0", "50", "100", (CSS.Property.Top & Record<never, never>), "none"
+   */
+  top: Responsive<
+    "0" | "50" | "100" | (CSS.Property.Top & Record<never, never>) | "none"
+  >;
 
-/**
-            * The `transform` property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.
-    * @param {CSS.Property.Transform} transform CSS.Property.Transform
-        */
-transform: Responsive<CSS.Property.Transform>;
+  /**
+   * The `transform` property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.
+   * @param {CSS.Property.Transform} transform CSS.Property.Transform
+   */
+  transform: Responsive<CSS.Property.Transform>;
 
-/**
-            * The `translate` property defines x- and y-coordinates of an element in 2D. You can also define the z-coordinate to change position in 3D.
-    * @param {CSS.Property.Translate} translate CSS.Property.Translate
-        */
-translate: Responsive<CSS.Property.Translate>;
+  /**
+   * The `translate` property defines x- and y-coordinates of an element in 2D. You can also define the z-coordinate to change position in 3D.
+   * @param {CSS.Property.Translate} translate CSS.Property.Translate
+   */
+  translate: Responsive<CSS.Property.Translate>;
 
-/**
-            * Setting `transform: translate(-50%, -50%)` css property.
-    * @param {string} translateMiddle boolean
-        */
-translateMiddle: Responsive<boolean>;
+  /**
+   * Setting `transform: translate(-50%, -50%)` css property.
+   * @param {string} translateMiddle boolean
+   */
+  translateMiddle: Responsive<boolean>;
 
-/**
-            * Setting `transform: translateX(-50%)` css property.
-    * @param {string} translateMiddleX boolean
-        */
-translateMiddleX: Responsive<boolean>;
+  /**
+   * Setting `transform: translateX(-50%)` css property.
+   * @param {string} translateMiddleX boolean
+   */
+  translateMiddleX: Responsive<boolean>;
 
-/**
-            * Setting `transform: translateY(-50%)` css property.
-    * @param {string} translateMiddleY boolean
-        */
-translateMiddleY: Responsive<boolean>;
+  /**
+   * Setting `transform: translateY(-50%)` css property.
+   * @param {string} translateMiddleY boolean
+   */
+  translateMiddleY: Responsive<boolean>;
 
-/**
-            * Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.
-    * @param {string} vAlign "baseline", "top", "middle", "bottom", "none"
-        */
-vAlign: Responsive<"baseline" | "top" | "middle" | "bottom" | "none">;
-        }>;
-
+  /**
+   * Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.
+   * @param {string} vAlign "baseline", "top", "middle", "bottom", "none"
+   */
+  vAlign: Responsive<"baseline" | "top" | "middle" | "bottom" | "none">;
+}>;
 
 export type LayoutProps = Partial<{
-        
-/**
-            * Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.
-    * @param {string} display "inline", "inline-block", "block", "grid", "inline-grid", "table", "table-row", "table-cell", "flex", "inline-flex", "none", (CSS.Property.Display & Record<never, never>)
-        */
-display: Responsive<"inline" | "inline-block" | "block" | "grid" | "inline-grid" | "table" | "table-row" | "table-cell" | "flex" | "inline-flex" | "none" | (CSS.Property.Display & Record<never, never>)>;
+  /**
+   * Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.
+   * @param {string} display "inline", "inline-block", "block", "grid", "inline-grid", "table", "table-row", "table-cell", "flex", "inline-flex", "none", (CSS.Property.Display & Record<never, never>)
+   */
+  display: Responsive<
+    | "inline"
+    | "inline-block"
+    | "block"
+    | "grid"
+    | "inline-grid"
+    | "table"
+    | "table-row"
+    | "table-cell"
+    | "flex"
+    | "inline-flex"
+    | "none"
+    | (CSS.Property.Display & Record<never, never>)
+  >;
 
-/**
-            * Change the display value of elements when printing with our print display utility classes. Includes support for the same display values as our responsive .d-* utilities.
-    * @param {string} displayPrint "inline", "inline-block", "block", "grid", "inline-grid", "table", "table-row", "table-cell", "flex", "inline-flex", "none"
-        */
-displayPrint: Responsive<"inline" | "inline-block" | "block" | "grid" | "inline-grid" | "table" | "table-row" | "table-cell" | "flex" | "inline-flex" | "none">;
+  /**
+   * Change the display value of elements when printing with our print display utility classes. Includes support for the same display values as our responsive .d-* utilities.
+   * @param {string} displayPrint "inline", "inline-block", "block", "grid", "inline-grid", "table", "table-row", "table-cell", "flex", "inline-flex", "none"
+   */
+  displayPrint: Responsive<
+    | "inline"
+    | "inline-block"
+    | "block"
+    | "grid"
+    | "inline-grid"
+    | "table"
+    | "table-row"
+    | "table-cell"
+    | "flex"
+    | "inline-flex"
+    | "none"
+  >;
 
-/**
-            * Set css `height: ` with percentage.
-    * @param {string} height "25", "50", "75", "100", "auto", (CSS.Property.Height & Record<never, never>), "none"
-        */
-height: Responsive<"25" | "50" | "75" | "100" | "auto" | (CSS.Property.Height & Record<never, never>) | "none">;
+  /**
+   * Set css `height: ` with percentage.
+   * @param {string} height "25", "50", "75", "100", "auto", (CSS.Property.Height & Record<never, never>), "none"
+   */
+  height: Responsive<
+    | "25"
+    | "50"
+    | "75"
+    | "100"
+    | "auto"
+    | (CSS.Property.Height & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Use .hstack for horizontal layouts. Stacked items are vertically centered by default and only take up their necessary width. Use .gap-* utilities to add space between items.
-    * @param {boolean} hstack boolean
-        */
-hstack: Responsive<boolean>;
+  /**
+   * Use .hstack for horizontal layouts. Stacked items are vertically centered by default and only take up their necessary width. Use .gap-* utilities to add space between items.
+   * @param {boolean} hstack boolean
+   */
+  hstack: Responsive<boolean>;
 
-/**
-            * Set css `max-height: ` percentage.
-    * @param {string} maxHeight "25", "50", "75", "100", "auto", (CSS.Property.MaxHeight & Record<never, never>), "none"
-        */
-maxHeight: Responsive<"25" | "50" | "75" | "100" | "auto" | (CSS.Property.MaxHeight & Record<never, never>) | "none">;
+  /**
+   * Set css `max-height: ` percentage.
+   * @param {string} maxHeight "25", "50", "75", "100", "auto", (CSS.Property.MaxHeight & Record<never, never>), "none"
+   */
+  maxHeight: Responsive<
+    | "25"
+    | "50"
+    | "75"
+    | "100"
+    | "auto"
+    | (CSS.Property.MaxHeight & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Set css `max-width: ` percentage.
-    * @param {string} maxWidth "25", "50", "75", "100", "auto", (CSS.Property.MaxWidth & Record<never, never>), "none"
-        */
-maxWidth: Responsive<"25" | "50" | "75" | "100" | "auto" | (CSS.Property.MaxWidth & Record<never, never>) | "none">;
+  /**
+   * Set css `max-width: ` percentage.
+   * @param {string} maxWidth "25", "50", "75", "100", "auto", (CSS.Property.MaxWidth & Record<never, never>), "none"
+   */
+  maxWidth: Responsive<
+    | "25"
+    | "50"
+    | "75"
+    | "100"
+    | "auto"
+    | (CSS.Property.MaxWidth & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Set css `min-height: ` percentage.
-    * @param {string} minHeight "25", "50", "75", "100", "auto", (CSS.Property.MinHeight & Record<never, never>), "none"
-        */
-minHeight: Responsive<"25" | "50" | "75" | "100" | "auto" | (CSS.Property.MinHeight & Record<never, never>) | "none">;
+  /**
+   * Set css `min-height: ` percentage.
+   * @param {string} minHeight "25", "50", "75", "100", "auto", (CSS.Property.MinHeight & Record<never, never>), "none"
+   */
+  minHeight: Responsive<
+    | "25"
+    | "50"
+    | "75"
+    | "100"
+    | "auto"
+    | (CSS.Property.MinHeight & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Set css `min-width: ` percentage.
-    * @param {string} minWidth "25", "50", "75", "100", "auto", (CSS.Property.MinWidth & Record<never, never>), "none"
-        */
-minWidth: Responsive<"25" | "50" | "75" | "100" | "auto" | (CSS.Property.MinWidth & Record<never, never>) | "none">;
+  /**
+   * Set css `min-width: ` percentage.
+   * @param {string} minWidth "25", "50", "75", "100", "auto", (CSS.Property.MinWidth & Record<never, never>), "none"
+   */
+  minWidth: Responsive<
+    | "25"
+    | "50"
+    | "75"
+    | "100"
+    | "auto"
+    | (CSS.Property.MinWidth & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Use these shorthand utilities for quickly configuring how content overflows an element.
-    * @param {string} overflow "auto", "hidden", "visible", "scroll", (CSS.Property.Overflow & Record<never, never>), "none"
-        */
-overflow: Responsive<"auto" | "hidden" | "visible" | "scroll" | (CSS.Property.Overflow & Record<never, never>) | "none">;
+  /**
+   * Use these shorthand utilities for quickly configuring how content overflows an element.
+   * @param {string} overflow "auto", "hidden", "visible", "scroll", (CSS.Property.Overflow & Record<never, never>), "none"
+   */
+  overflow: Responsive<
+    | "auto"
+    | "hidden"
+    | "visible"
+    | "scroll"
+    | (CSS.Property.Overflow & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Adjust the overflow-x property to affect the overflow of content horizontally.
-    * @param {string} overflowX "auto", "hidden", "visible", "scroll", (CSS.Property.OverflowX & Record<never, never>), "none"
-        */
-overflowX: Responsive<"auto" | "hidden" | "visible" | "scroll" | (CSS.Property.OverflowX & Record<never, never>) | "none">;
+  /**
+   * Adjust the overflow-x property to affect the overflow of content horizontally.
+   * @param {string} overflowX "auto", "hidden", "visible", "scroll", (CSS.Property.OverflowX & Record<never, never>), "none"
+   */
+  overflowX: Responsive<
+    | "auto"
+    | "hidden"
+    | "visible"
+    | "scroll"
+    | (CSS.Property.OverflowX & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Adjust the overflow-y property to affect the overflow of content vertically.
-    * @param {string} overflowY "auto", "hidden", "visible", "scroll", (CSS.Property.OverflowY & Record<never, never>), "none"
-        */
-overflowY: Responsive<"auto" | "hidden" | "visible" | "scroll" | (CSS.Property.OverflowY & Record<never, never>) | "none">;
+  /**
+   * Adjust the overflow-y property to affect the overflow of content vertically.
+   * @param {string} overflowY "auto", "hidden", "visible", "scroll", (CSS.Property.OverflowY & Record<never, never>), "none"
+   */
+  overflowY: Responsive<
+    | "auto"
+    | "hidden"
+    | "visible"
+    | "scroll"
+    | (CSS.Property.OverflowY & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Control the visibility of elements, without modifying their display, with visibility utilities.
-    * @param {string} visibility (CSS.Property.Visibility & Record<never, never>), "none"
-        */
-visibility: Responsive<(CSS.Property.Visibility & Record<never, never>) | "none">;
+  /**
+   * Control the visibility of elements, without modifying their display, with visibility utilities.
+   * @param {string} visibility (CSS.Property.Visibility & Record<never, never>), "none"
+   */
+  visibility: Responsive<
+    (CSS.Property.Visibility & Record<never, never>) | "none"
+  >;
 
-/**
-            * Use .vstack to create vertical layouts. Stacked items are full-width by default. Use .gap-* utilities to add space between items.
-    * @param {boolean} hstack boolean
-        */
-vstack: Responsive<boolean>;
+  /**
+   * Use .vstack to create vertical layouts. Stacked items are full-width by default. Use .gap-* utilities to add space between items.
+   * @param {boolean} hstack boolean
+   */
+  vstack: Responsive<boolean>;
 
-/**
-            * Set css `width: ` with percentage.
-    * @param {string} width "25", "50", "75", "100", "auto", (CSS.Property.Width & Record<never, never>), "none"
-        */
-width: Responsive<"25" | "50" | "75" | "100" | "auto" | (CSS.Property.Width & Record<never, never>) | "none">;
+  /**
+   * Set css `width: ` with percentage.
+   * @param {string} width "25", "50", "75", "100", "auto", (CSS.Property.Width & Record<never, never>), "none"
+   */
+  width: Responsive<
+    | "25"
+    | "50"
+    | "75"
+    | "100"
+    | "auto"
+    | (CSS.Property.Width & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Use our low-level z-index utilities to quickly change the stack level of an element or component.
-    * @param {string} zIndex "n1", "0", "1", "2", "3", (CSS.Property.ZIndex & Record<never, never>), "none"
-        */
-zIndex: Responsive<"n1" | "0" | "1" | "2" | "3" | (CSS.Property.ZIndex & Record<never, never>) | "none">;
-        }>;
-
+  /**
+   * Use our low-level z-index utilities to quickly change the stack level of an element or component.
+   * @param {string} zIndex "n1", "0", "1", "2", "3", (CSS.Property.ZIndex & Record<never, never>), "none"
+   */
+  zIndex: Responsive<
+    | "n1"
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | (CSS.Property.ZIndex & Record<never, never>)
+    | "none"
+  >;
+}>;
 
 export type BackgroundProps = Partial<{
-        
-/**
-            * Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities do not set color, so in some cases you’ll want to use .text-* color utilities.
-    * @param {string} bg ThemeColor, (CSS.Property.BackgroundColor & Record<never, never>), "black", "white", "body", "transparent", "body-secondary", "body-tertiary", "none"
-        */
-bg: Responsive<ThemeColor | (CSS.Property.BackgroundColor & Record<never, never>) | "black" | "white" | "body" | "transparent" | "body-secondary" | "body-tertiary" | "none">;
+  /**
+   * Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities do not set color, so in some cases you’ll want to use .text-* color utilities.
+   * @param {string} bg ThemeColor, (CSS.Property.BackgroundColor & Record<never, never>), "black", "white", "body", "transparent", "body-secondary", "body-tertiary", "none"
+   */
+  bg: Responsive<
+    | ThemeColor
+    | (CSS.Property.BackgroundColor & Record<never, never>)
+    | "black"
+    | "white"
+    | "body"
+    | "transparent"
+    | "body-secondary"
+    | "body-tertiary"
+    | "none"
+  >;
 
-/**
-            * The `background-attachment` property sets whether a background image scrolls with the rest of the page, or is fixed.
-    * @param {CSS.Property.BackgroundAttachment} bgAttachment CSS.Property.BackgroundAttachment
-        */
-bgAttachment: Responsive<CSS.Property.BackgroundAttachment>;
+  /**
+   * The `background-attachment` property sets whether a background image scrolls with the rest of the page, or is fixed.
+   * @param {CSS.Property.BackgroundAttachment} bgAttachment CSS.Property.BackgroundAttachment
+   */
+  bgAttachment: Responsive<CSS.Property.BackgroundAttachment>;
 
-/**
-            * The `background-blend-mode` property defines the blending mode of each background layer (color and/or image).
-    * @param {CSS.Property.BackgroundBlendMode} bgBlendMode CSS.Property.BackgroundBlendMode
-        */
-bgBlendMode: Responsive<CSS.Property.BackgroundBlendMode>;
+  /**
+   * The `background-blend-mode` property defines the blending mode of each background layer (color and/or image).
+   * @param {CSS.Property.BackgroundBlendMode} bgBlendMode CSS.Property.BackgroundBlendMode
+   */
+  bgBlendMode: Responsive<CSS.Property.BackgroundBlendMode>;
 
-/**
-            * The `background-clip` property defines how far the background (color or image) should extend within an element.
-    * @param {CSS.Property.BackgroundClip} bgClip CSS.Property.BackgroundClip
-        */
-bgClip: Responsive<CSS.Property.BackgroundClip>;
+  /**
+   * The `background-clip` property defines how far the background (color or image) should extend within an element.
+   * @param {CSS.Property.BackgroundClip} bgClip CSS.Property.BackgroundClip
+   */
+  bgClip: Responsive<CSS.Property.BackgroundClip>;
 
-/**
-            * The `background-color` property sets the background color of an element.
-    *
-    * The background of an element is the total size of the element, including padding and border (but not the margin).
-    * 
-    * **Tip:** Use a background color and a text color that makes the text easy to read.
-    * @param {CSS.Property.BackgroundColor} bgColor CSS.Property.BackgroundColor
-        */
-bgColor: Responsive<CSS.Property.BackgroundColor>;
+  /**
+   * The `background-color` property sets the background color of an element.
+   *
+   * The background of an element is the total size of the element, including padding and border (but not the margin).
+   *
+   * **Tip:** Use a background color and a text color that makes the text easy to read.
+   * @param {CSS.Property.BackgroundColor} bgColor CSS.Property.BackgroundColor
+   */
+  bgColor: Responsive<CSS.Property.BackgroundColor>;
 
-/**
-            * By adding a .bg-gradient class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.
-    * Do you need a gradient in your custom CSS? Just add `background-image: var(--#{$prefix}gradient)`.
-    * @param {string} bgGradient boolean
-        */
-bgGradient: Responsive<boolean>;
+  /**
+   * By adding a .bg-gradient class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.
+   * Do you need a gradient in your custom CSS? Just add `background-image: var(--#{$prefix}gradient)`.
+   * @param {string} bgGradient boolean
+   */
+  bgGradient: Responsive<boolean>;
 
-/**
-            * The `background-image` property sets one or more background images for an element.
-    *
-    * By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
-    * 
-    * **Tip:** The background of an element is the total size of the element, including padding and border (but not the margin).
-    * 
-    * **Tip:** Always set a background-color to be used if the image is unavailable.
-    * @param {CSS.Property.BackgroundImage} bgImage CSS.Property.BackgroundImage
-        */
-bgImage: Responsive<CSS.Property.BackgroundImage>;
+  /**
+   * The `background-image` property sets one or more background images for an element.
+   *
+   * By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+   *
+   * **Tip:** The background of an element is the total size of the element, including padding and border (but not the margin).
+   *
+   * **Tip:** Always set a background-color to be used if the image is unavailable.
+   * @param {CSS.Property.BackgroundImage} bgImage CSS.Property.BackgroundImage
+   */
+  bgImage: Responsive<CSS.Property.BackgroundImage>;
 
-/**
-            * As of v5.1.0, background-color utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.
-    * @param {string} bgOpacity "10", "25", "50", "75", "100", number, "none"
-        */
-bgOpacity: Responsive<"10" | "25" | "50" | "75" | "100" | number | "none">;
+  /**
+   * As of v5.1.0, background-color utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.
+   * @param {string} bgOpacity "10", "25", "50", "75", "100", number, "none"
+   */
+  bgOpacity: Responsive<"10" | "25" | "50" | "75" | "100" | number | "none">;
 
-/**
-            * The background-origin property specifies the origin position (the background positioning area) of a background image.
-    *
-    * **Note:** This property has no effect if `background-attachment` is "fixed".
-    * @param {CSS.Property.BackgroundOrigin} bgOrigin CSS.Property.BackgroundOrigin
-        */
-bgOrigin: Responsive<CSS.Property.BackgroundOrigin>;
+  /**
+   * The background-origin property specifies the origin position (the background positioning area) of a background image.
+   *
+   * **Note:** This property has no effect if `background-attachment` is "fixed".
+   * @param {CSS.Property.BackgroundOrigin} bgOrigin CSS.Property.BackgroundOrigin
+   */
+  bgOrigin: Responsive<CSS.Property.BackgroundOrigin>;
 
-/**
-            * The `background-position` property sets the starting position of a background image.
-    *
-    * **Tip:** By default, a `background-image` is placed at the top-left corner of an element, and repeated both vertically and horizontally.
-    * @param {CSS.Property.BackgroundPosition} bgPosition CSS.Property.BackgroundPosition
-        */
-bgPosition: Responsive<CSS.Property.BackgroundPosition>;
+  /**
+   * The `background-position` property sets the starting position of a background image.
+   *
+   * **Tip:** By default, a `background-image` is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+   * @param {CSS.Property.BackgroundPosition} bgPosition CSS.Property.BackgroundPosition
+   */
+  bgPosition: Responsive<CSS.Property.BackgroundPosition>;
 
-/**
-            * The `background-position-x` property sets the position of a background image on the x-axis.
-    *
-    * **Tip:** By default, a `background-image` is placed at the top-left corner of an element, and repeated both vertically and horizontally.
-    * @param {CSS.Property.BackgroundPositionX} bgPositionX CSS.Property.BackgroundPositionX
-        */
-bgPositionX: Responsive<CSS.Property.BackgroundPositionX>;
+  /**
+   * The `background-position-x` property sets the position of a background image on the x-axis.
+   *
+   * **Tip:** By default, a `background-image` is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+   * @param {CSS.Property.BackgroundPositionX} bgPositionX CSS.Property.BackgroundPositionX
+   */
+  bgPositionX: Responsive<CSS.Property.BackgroundPositionX>;
 
-/**
-            * The `background-position-y` property sets the position of a background image on the y-axis.
-    *
-    * **Tip:** By default, a `background-image` is placed at the top-left corner of an element, and repeated both vertically and horizontally.
-    * @param {CSS.Property.BackgroundPositionY} bgPositionY CSS.Property.BackgroundPositionY
-        */
-bgPositionY: Responsive<CSS.Property.BackgroundPositionY>;
+  /**
+   * The `background-position-y` property sets the position of a background image on the y-axis.
+   *
+   * **Tip:** By default, a `background-image` is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+   * @param {CSS.Property.BackgroundPositionY} bgPositionY CSS.Property.BackgroundPositionY
+   */
+  bgPositionY: Responsive<CSS.Property.BackgroundPositionY>;
 
-/**
-            * The `background-repeat` property sets if/how a background image will be repeated.
-    *
-    * By default, a `background-image` is repeated both vertically and horizontally.
-    * 
-    * **Tip:** The background image is placed according to the `background-position` property. If no `background-position` is specified, the image is always placed at the element's top left corner.
-    * @param {CSS.Property.BackgroundRepeat} bgRepeat CSS.Property.BackgroundRepeat
-        */
-bgRepeat: Responsive<CSS.Property.BackgroundRepeat>;
+  /**
+   * The `background-repeat` property sets if/how a background image will be repeated.
+   *
+   * By default, a `background-image` is repeated both vertically and horizontally.
+   *
+   * **Tip:** The background image is placed according to the `background-position` property. If no `background-position` is specified, the image is always placed at the element's top left corner.
+   * @param {CSS.Property.BackgroundRepeat} bgRepeat CSS.Property.BackgroundRepeat
+   */
+  bgRepeat: Responsive<CSS.Property.BackgroundRepeat>;
 
-/**
-            * The `background-size` property specifies the size of the background images.
-    * @param {CSS.Property.BackgroundSize} bgSize CSS.Property.BackgroundSize
-        */
-bgSize: Responsive<CSS.Property.BackgroundSize>;
+  /**
+   * The `background-size` property specifies the size of the background images.
+   * @param {CSS.Property.BackgroundSize} bgSize CSS.Property.BackgroundSize
+   */
+  bgSize: Responsive<CSS.Property.BackgroundSize>;
 
-/**
-            * Render background color `.bg-*` with `.bg-*-subtle` utility.
-    * @param {string} bgSubtle boolean
-        */
-bgSubtle: Responsive<boolean>;
-        }>;
-
+  /**
+   * Render background color `.bg-*` with `.bg-*-subtle` utility.
+   * @param {string} bgSubtle boolean
+   */
+  bgSubtle: Responsive<boolean>;
+}>;
 
 export type BorderProps = Partial<{
-        
-/**
-            * Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.
-    * @param {string} border boolean, (CSS.Property.Border & Record<never, never>), "0", "none"
-        */
-border: Responsive<boolean | (CSS.Property.Border & Record<never, never>) | "0" | "none">;
+  /**
+   * Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.
+   * @param {string} border boolean, (CSS.Property.Border & Record<never, never>), "0", "none"
+   */
+  border: Responsive<
+    boolean | (CSS.Property.Border & Record<never, never>) | "0" | "none"
+  >;
 
-/**
-            * The CSS `border-block` property is very similar to CSS property border, but the `border-block` property is dependent on block direction. Aka, `writing-mode` that defines block direction
-    * @param {string} borderBlock CSS.Property.BorderBlock
-        */
-borderBlock: Responsive<CSS.Property.BorderBlock>;
+  /**
+   * The CSS `border-block` property is very similar to CSS property border, but the `border-block` property is dependent on block direction. Aka, `writing-mode` that defines block direction
+   * @param {string} borderBlock CSS.Property.BorderBlock
+   */
+  borderBlock: Responsive<CSS.Property.BorderBlock>;
 
-/**
-            * Set border on `border-bottom` only.
-    * @param {string} borderBottom boolean, (CSS.Property.BorderBottom & Record<never, never>), "0", "none"
-        */
-borderBottom: Responsive<boolean | (CSS.Property.BorderBottom & Record<never, never>) | "0" | "none">;
+  /**
+   * Set border on `border-bottom` only.
+   * @param {string} borderBottom boolean, (CSS.Property.BorderBottom & Record<never, never>), "0", "none"
+   */
+  borderBottom: Responsive<
+    boolean | (CSS.Property.BorderBottom & Record<never, never>) | "0" | "none"
+  >;
 
-/**
-            * The `border-collapse` property sets the collapsing borders model for two tables.
-    * @param {string} borderCollapse CSS.Property.BorderCollapse
-        */
-borderCollapse: Responsive<CSS.Property.BorderCollapse>;
+  /**
+   * The `border-collapse` property sets the collapsing borders model for two tables.
+   * @param {string} borderCollapse CSS.Property.BorderCollapse
+   */
+  borderCollapse: Responsive<CSS.Property.BorderCollapse>;
 
-/**
-            * Change the border color using utilities built on our theme colors.
-    * @param {string} borderColor ThemeColor, CSS.Property.BorderColor, "black", "white", "none"
-        */
-borderColor: Responsive<ThemeColor | CSS.Property.BorderColor | "black" | "white" | "none">;
+  /**
+   * Change the border color using utilities built on our theme colors.
+   * @param {string} borderColor ThemeColor, CSS.Property.BorderColor, "black", "white", "none"
+   */
+  borderColor: Responsive<
+    ThemeColor | CSS.Property.BorderColor | "black" | "white" | "none"
+  >;
 
-/**
-            * Set border on `border-right` only.
-    * @param {string} borderEnd boolean, (CSS.Property.BorderLeft & Record<never, never>), "0", "none"
-        */
-borderEnd: Responsive<boolean | (CSS.Property.BorderLeft & Record<never, never>) | "0" | "none">;
+  /**
+   * Set border on `border-right` only.
+   * @param {string} borderEnd boolean, (CSS.Property.BorderLeft & Record<never, never>), "0", "none"
+   */
+  borderEnd: Responsive<
+    boolean | (CSS.Property.BorderLeft & Record<never, never>) | "0" | "none"
+  >;
 
-/**
-            * The `border-image` property allows you to specify an image to be used as the border around an element.
-    * @param {string} borderImage CSS.Property.BorderImage
-        */
-borderImage: Responsive<CSS.Property.BorderImage>;
+  /**
+   * The `border-image` property allows you to specify an image to be used as the border around an element.
+   * @param {string} borderImage CSS.Property.BorderImage
+   */
+  borderImage: Responsive<CSS.Property.BorderImage>;
 
-/**
-            * The `border-iline` property sets the style, color and width of the borders for different elements in the inline direction.
-    * @param {string} borderInline CSS.Property.BorderInline
-        */
-borderInline: Responsive<CSS.Property.BorderInline>;
+  /**
+   * The `border-iline` property sets the style, color and width of the borders for different elements in the inline direction.
+   * @param {string} borderInline CSS.Property.BorderInline
+   */
+  borderInline: Responsive<CSS.Property.BorderInline>;
 
-/**
-            * Bootstrap border-{color} utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.
-    * @param {string} borderOpacity "10", "25", "50", "75", "100", number, "none"
-        */
-borderOpacity: Responsive<"10" | "25" | "50" | "75" | "100" | number | "none">;
+  /**
+   * Bootstrap border-{color} utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.
+   * @param {string} borderOpacity "10", "25", "50", "75", "100", number, "none"
+   */
+  borderOpacity: Responsive<
+    "10" | "25" | "50" | "75" | "100" | number | "none"
+  >;
 
-/**
-            * Add classes to an element to easily round with `border-radius`.
-    * @param {string} borderRadius boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
-        */
-borderRadius: Responsive<boolean | "0" | "1" | "2" | "3" | "4" | "5" | "circle" | "pill" | (CSS.Property.BorderRadius & Record<never, never>) | "none">;
+  /**
+   * Add classes to an element to easily round with `border-radius`.
+   * @param {string} borderRadius boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
+   */
+  borderRadius: Responsive<
+    | boolean
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "circle"
+    | "pill"
+    | (CSS.Property.BorderRadius & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Add classes to an element to easily round `border-bottom-right-radius` and `border-bottom-left-radius` corners.
-    * @param {string} borderRadiusBottom boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
-        */
-borderRadiusBottom: Responsive<boolean | "0" | "1" | "2" | "3" | "4" | "5" | "circle" | "pill" | (CSS.Property.BorderRadius & Record<never, never>) | "none">;
+  /**
+   * Add classes to an element to easily round `border-bottom-right-radius` and `border-bottom-left-radius` corners.
+   * @param {string} borderRadiusBottom boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
+   */
+  borderRadiusBottom: Responsive<
+    | boolean
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "circle"
+    | "pill"
+    | (CSS.Property.BorderRadius & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Add classes to an element to easily round `border-top-right-radius` and `border-bottom-right-radius` corners.
-    * @param {string} borderRadiusEnd boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
-        */
-borderRadiusEnd: Responsive<boolean | "0" | "1" | "2" | "3" | "4" | "5" | "circle" | "pill" | (CSS.Property.BorderRadius & Record<never, never>) | "none">;
+  /**
+   * Add classes to an element to easily round `border-top-right-radius` and `border-bottom-right-radius` corners.
+   * @param {string} borderRadiusEnd boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
+   */
+  borderRadiusEnd: Responsive<
+    | boolean
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "circle"
+    | "pill"
+    | (CSS.Property.BorderRadius & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Add classes to an element to easily round `border-top-left-radius` and `border-bottom-left-radius` corners.
-    * @param {string} borderRadiusStart boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
-        */
-borderRadiusStart: Responsive<boolean | "0" | "1" | "2" | "3" | "4" | "5" | "circle" | "pill" | (CSS.Property.BorderRadius & Record<never, never>) | "none">;
+  /**
+   * Add classes to an element to easily round `border-top-left-radius` and `border-bottom-left-radius` corners.
+   * @param {string} borderRadiusStart boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
+   */
+  borderRadiusStart: Responsive<
+    | boolean
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "circle"
+    | "pill"
+    | (CSS.Property.BorderRadius & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Add classes to an element to easily round `border-top-left-radius` and `border-top-right-radius` corners.
-    * @param {string} borderRadiusTop boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
-        */
-borderRadiusTop: Responsive<boolean | "0" | "1" | "2" | "3" | "4" | "5" | "circle" | "pill" | (CSS.Property.BorderRadius & Record<never, never>) | "none">;
+  /**
+   * Add classes to an element to easily round `border-top-left-radius` and `border-top-right-radius` corners.
+   * @param {string} borderRadiusTop boolean, "0", "1", "2", "3", "4", "5", "circle", "pill", (CSS.Property.BorderRadius & Record<never, never>), "none"
+   */
+  borderRadiusTop: Responsive<
+    | boolean
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "circle"
+    | "pill"
+    | (CSS.Property.BorderRadius & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * The `border-spacing` property sets the distance between the borders of adjacent cells.
-    * @param {string} borderSpacing CSS.Property.BorderSpacing
-        */
-borderSpacing: Responsive<CSS.Property.BorderSpacing>;
+  /**
+   * The `border-spacing` property sets the distance between the borders of adjacent cells.
+   * @param {string} borderSpacing CSS.Property.BorderSpacing
+   */
+  borderSpacing: Responsive<CSS.Property.BorderSpacing>;
 
-/**
-            * Set border on `border-left` only.
-    * @param {string} borderStart boolean, (CSS.Property.BorderRight & Record<never, never>), "0", "none"
-        */
-borderStart: Responsive<boolean | (CSS.Property.BorderRight & Record<never, never>) | "0" | "none">;
+  /**
+   * Set border on `border-left` only.
+   * @param {string} borderStart boolean, (CSS.Property.BorderRight & Record<never, never>), "0", "none"
+   */
+  borderStart: Responsive<
+    boolean | (CSS.Property.BorderRight & Record<never, never>) | "0" | "none"
+  >;
 
-/**
-            * The `border-style` property sets the style of an element's four borders. This property can have from one to four values.
-    * @param {string} borderStyle CSS.Property.BorderStyle
-        */
-borderStyle: Responsive<CSS.Property.BorderStyle>;
+  /**
+   * The `border-style` property sets the style of an element's four borders. This property can have from one to four values.
+   * @param {string} borderStyle CSS.Property.BorderStyle
+   */
+  borderStyle: Responsive<CSS.Property.BorderStyle>;
 
-/**
-            * Apply border color with `-subtle` colors.
-    * @param {string} borderSubtle boolean
-        */
-borderSubtle: Responsive<boolean>;
+  /**
+   * Apply border color with `-subtle` colors.
+   * @param {string} borderSubtle boolean
+   */
+  borderSubtle: Responsive<boolean>;
 
-/**
-            * Set border on `border-top` only.
-    * @param {string} borderTop boolean, (CSS.Property.BorderTop & Record<never, never>), "0", "none"
-        */
-borderTop: Responsive<boolean | (CSS.Property.BorderTop & Record<never, never>) | "0" | "none">;
+  /**
+   * Set border on `border-top` only.
+   * @param {string} borderTop boolean, (CSS.Property.BorderTop & Record<never, never>), "0", "none"
+   */
+  borderTop: Responsive<
+    boolean | (CSS.Property.BorderTop & Record<never, never>) | "0" | "none"
+  >;
 
-/**
-            * Add classes to an element to easily round `border-top-left-radius` and `border-bottom-left-radius` corners.
-    * @param {string} borderWidth "1", "2", "3", "4", "5", (CSS.Property.BorderWidth & Record<never, never>), "none"
-        */
-borderWidth: Responsive<"1" | "2" | "3" | "4" | "5" | (CSS.Property.BorderWidth & Record<never, never>) | "none">;
-        }>;
-
+  /**
+   * Add classes to an element to easily round `border-top-left-radius` and `border-bottom-left-radius` corners.
+   * @param {string} borderWidth "1", "2", "3", "4", "5", (CSS.Property.BorderWidth & Record<never, never>), "none"
+   */
+  borderWidth: Responsive<
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.BorderWidth & Record<never, never>)
+    | "none"
+  >;
+}>;
 
 export type TextProps = Partial<{
-        
-/**
-            * Colorize text with color utilities. If you want to colorize links, you can use the .link-* helper classes which have :hover and :focus states.
-    * @param {ThemeColor} color CSS.Property.Color
-        */
-color: Responsive<CSS.Property.Color>;
+  /**
+   * Colorize text with color utilities. If you want to colorize links, you can use the .link-* helper classes which have :hover and :focus states.
+   * @param {ThemeColor} color CSS.Property.Color
+   */
+  color: Responsive<CSS.Property.Color>;
 
-/**
-            * The `.focus-ring` helper removes the default outline on :focus, replacing it with a `box-shadow` that can be more broadly customized. The new shadow is made up of a series of CSS variables, inherited from the :root level, that can be modified for any element or component.
-    * @param {string} focusRing ThemeColor, "none"
-        */
-focusRing: Responsive<ThemeColor | "none">;
+  /**
+   * The `.focus-ring` helper removes the default outline on :focus, replacing it with a `box-shadow` that can be more broadly customized. The new shadow is made up of a series of CSS variables, inherited from the :root level, that can be modified for any element or component.
+   * @param {string} focusRing ThemeColor, "none"
+   */
+  focusRing: Responsive<ThemeColor | "none">;
 
-/**
-          * The `font` property is a shorthand property for: `font-style`, `font-variant`, `font-weight`, `font-size/line-height` and `font-family`.
-  *
-  * The font-size and font-family values are required. If one of the other values is missing, their default value are used.
-  * 
-  * **Note:** The line-height property sets the space between lines.
-  * @param {CSS.Property.Font} font CSS.Property.Font
-        */
-font: Responsive<CSS.Property.Font>;
+  /**
+   * The `font` property is a shorthand property for: `font-style`, `font-variant`, `font-weight`, `font-size/line-height` and `font-family`.
+   *
+   * The font-size and font-family values are required. If one of the other values is missing, their default value are used.
+   *
+   * **Note:** The line-height property sets the space between lines.
+   * @param {CSS.Property.Font} font CSS.Property.Font
+   */
+  font: Responsive<CSS.Property.Font>;
 
-/**
-          * The `font-family` property specifies the font for an element.
-  *
-  * The `font-family` property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.
-  * @param {CSS.Property.FontFamily} fontFamily CSS.Property.FontFamily
-        */
-fontFamily: Responsive<CSS.Property.FontFamily>;
+  /**
+   * The `font-family` property specifies the font for an element.
+   *
+   * The `font-family` property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.
+   * @param {CSS.Property.FontFamily} fontFamily CSS.Property.FontFamily
+   */
+  fontFamily: Responsive<CSS.Property.FontFamily>;
 
-/**
-          * The `font-kerning` property controls the usage of the kerning information stored in a font.
-  *
-  * **Tip:** Kerning defines how letters are spaced.
-  * 
-  * **Note:** For fonts that do not include kerning data, this property will have no visible effect.
-  * @param {CSS.Property.FontKerning} fontKerning CSS.Property.FontKerning
-        */
-fontKerning: Responsive<CSS.Property.FontKerning>;
+  /**
+   * The `font-kerning` property controls the usage of the kerning information stored in a font.
+   *
+   * **Tip:** Kerning defines how letters are spaced.
+   *
+   * **Note:** For fonts that do not include kerning data, this property will have no visible effect.
+   * @param {CSS.Property.FontKerning} fontKerning CSS.Property.FontKerning
+   */
+  fontKerning: Responsive<CSS.Property.FontKerning>;
 
-/**
-            * Change a selection to our monospace font stack with `.font-monospace.`
-    * @param {string} fontMonospace boolean
-        */
-fontMonospace: Responsive<boolean>;
+  /**
+   * Change a selection to our monospace font stack with `.font-monospace.`
+   * @param {string} fontMonospace boolean
+   */
+  fontMonospace: Responsive<boolean>;
 
-/**
-            * Quickly change the font-size of text. While our heading classes (e.g., .h1–.h6) apply font-size, font-weight, and line-height, these utilities only apply font-size. Sizing for these utilities matches HTML’s heading elements, so as the number increases, their size decreases.
-    * @param {string} fontSize "1", "2", "3", "4", "5", "6", (CSS.Property.FontSize & Record<never, never>), "none"
-        */
-fontSize: Responsive<"1" | "2" | "3" | "4" | "5" | "6" | (CSS.Property.FontSize & Record<never, never>) | "none">;
+  /**
+   * Quickly change the font-size of text. While our heading classes (e.g., .h1–.h6) apply font-size, font-weight, and line-height, these utilities only apply font-size. Sizing for these utilities matches HTML’s heading elements, so as the number increases, their size decreases.
+   * @param {string} fontSize "1", "2", "3", "4", "5", "6", (CSS.Property.FontSize & Record<never, never>), "none"
+   */
+  fontSize: Responsive<
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "6"
+    | (CSS.Property.FontSize & Record<never, never>)
+    | "none"
+  >;
 
-/**
-          * The `font-size-adjust` property gives you better control of the font size when the first selected font is not available.
-  *
-  * When a font is not available, the browser uses the second specified font. This could result in a big change for the font size. To prevent this, use the `font-size-adjust` property.
-  * @param {CSS.Property.FontSizeAdjust} fontSizeAdjust CSS.Property.FontSizeAdjust
-        */
-fontSizeAdjust: Responsive<CSS.Property.FontSizeAdjust>;
+  /**
+   * The `font-size-adjust` property gives you better control of the font size when the first selected font is not available.
+   *
+   * When a font is not available, the browser uses the second specified font. This could result in a big change for the font size. To prevent this, use the `font-size-adjust` property.
+   * @param {CSS.Property.FontSizeAdjust} fontSizeAdjust CSS.Property.FontSizeAdjust
+   */
+  fontSizeAdjust: Responsive<CSS.Property.FontSizeAdjust>;
 
-/**
-          * The `font-stretch` property allows you to make text narrower (condensed) or wider (expanded).
-  *
-  * **Note:** Some fonts provide additional faces; condensed faces and expanded faces. For these fonts, you can use the font-stretch property to select a normal, condensed, or expanded font face.
-  * 
-  * **Note:** This property has no effect if the selected font does not offer condensed or expanded faces!
-  * @param {CSS.Property.FontStretch} fontStretch CSS.Property.FontStretch
-        */
-fontStretch: Responsive<CSS.Property.FontStretch>;
+  /**
+   * The `font-stretch` property allows you to make text narrower (condensed) or wider (expanded).
+   *
+   * **Note:** Some fonts provide additional faces; condensed faces and expanded faces. For these fonts, you can use the font-stretch property to select a normal, condensed, or expanded font face.
+   *
+   * **Note:** This property has no effect if the selected font does not offer condensed or expanded faces!
+   * @param {CSS.Property.FontStretch} fontStretch CSS.Property.FontStretch
+   */
+  fontStretch: Responsive<CSS.Property.FontStretch>;
 
-/**
-            * Quickly change the `font-weight` of text with these utilities
-    * @param {string} fontStyle "italic", "normal", (CSS.Property.FontStyle & Record<never, never>), "none"
-        */
-fontStyle: Responsive<"italic" | "normal" | (CSS.Property.FontStyle & Record<never, never>) | "none">;
+  /**
+   * Quickly change the `font-weight` of text with these utilities
+   * @param {string} fontStyle "italic", "normal", (CSS.Property.FontStyle & Record<never, never>), "none"
+   */
+  fontStyle: Responsive<
+    | "italic"
+    | "normal"
+    | (CSS.Property.FontStyle & Record<never, never>)
+    | "none"
+  >;
 
-/**
-          * In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
-  *
-  * The `font-variant` property specifies whether or not a text should be displayed in a small-caps font.
-  * @param {CSS.Property.FontVariant} fontVariant CSS.Property.FontVariant
-        */
-fontVariant: Responsive<CSS.Property.FontVariant>;
+  /**
+   * In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+   *
+   * The `font-variant` property specifies whether or not a text should be displayed in a small-caps font.
+   * @param {CSS.Property.FontVariant} fontVariant CSS.Property.FontVariant
+   */
+  fontVariant: Responsive<CSS.Property.FontVariant>;
 
-/**
-          * The `font-variant-caps` property controls the usage of alternate glyphs for capital letters.
-  * @param {CSS.Property.FontVariantCaps} fontVariant CSS.Property.FontVariantCaps
-        */
-fontVariantCaps: Responsive<CSS.Property.FontVariantCaps>;
+  /**
+   * The `font-variant-caps` property controls the usage of alternate glyphs for capital letters.
+   * @param {CSS.Property.FontVariantCaps} fontVariant CSS.Property.FontVariantCaps
+   */
+  fontVariantCaps: Responsive<CSS.Property.FontVariantCaps>;
 
-/**
-            * Quickly change the `font-style` of text with these utilities
-    * @param {string} fontWeight "lighter", "light", "normal", "medium", "semibold", "bold", "bolder", (CSS.Property.FontWeight & Record<never, never>), "none"
-        */
-fontWeight: Responsive<"lighter" | "light" | "normal" | "medium" | "semibold" | "bold" | "bolder" | (CSS.Property.FontWeight & Record<never, never>) | "none">;
+  /**
+   * Quickly change the `font-style` of text with these utilities
+   * @param {string} fontWeight "lighter", "light", "normal", "medium", "semibold", "bold", "bolder", (CSS.Property.FontWeight & Record<never, never>), "none"
+   */
+  fontWeight: Responsive<
+    | "lighter"
+    | "light"
+    | "normal"
+    | "medium"
+    | "semibold"
+    | "bold"
+    | "bolder"
+    | (CSS.Property.FontWeight & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Change the line height with `.lh-*` utilities.
-    * @param {string} lineHeight "1", "sm", "base", "lg", (CSS.Property.LineHeight & Record<never, never>), "none"
-        */
-lineHeight: Responsive<"1" | "sm" | "base" | "lg" | (CSS.Property.LineHeight & Record<never, never>) | "none">;
+  /**
+   * Change the line height with `.lh-*` utilities.
+   * @param {string} lineHeight "1", "sm", "base", "lg", (CSS.Property.LineHeight & Record<never, never>), "none"
+   */
+  lineHeight: Responsive<
+    | "1"
+    | "sm"
+    | "base"
+    | "lg"
+    | (CSS.Property.LineHeight & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Colored link helpers have been updated to pair with our link utilities. Use the new utilities to modify the link opacity, underline opacity, and underline offset.
-    * @param {string} textTrunc "body-emphasis", ThemeColor, "none"
-        */
-linkColor: Responsive<"body-emphasis" | ThemeColor | "none">;
+  /**
+   * Colored link helpers have been updated to pair with our link utilities. Use the new utilities to modify the link opacity, underline opacity, and underline offset.
+   * @param {string} textTrunc "body-emphasis", ThemeColor, "none"
+   */
+  linkColor: Responsive<"body-emphasis" | ThemeColor | "none">;
 
-/**
-            * Change the underline’s distance from your text. Offset is set in em units to automatically scale with the element’s current font-size.
-    * @param {string} linkOffset "1", "2", "3", (CSS.Property.TextUnderlineOffset & Record<never, never>), "none"
-        */
-linkOffset: Responsive<"1" | "2" | "3" | (CSS.Property.TextUnderlineOffset & Record<never, never>) | "none">;
+  /**
+   * Change the underline’s distance from your text. Offset is set in em units to automatically scale with the element’s current font-size.
+   * @param {string} linkOffset "1", "2", "3", (CSS.Property.TextUnderlineOffset & Record<never, never>), "none"
+   */
+  linkOffset: Responsive<
+    | "1"
+    | "2"
+    | "3"
+    | (CSS.Property.TextUnderlineOffset & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Change the alpha opacity of the link rgba() color value with utilities. Please be aware that changes to a color’s opacity can lead to links with insufficient contrast.
-    * @param {opacity} textEmphasis "10", "25", "50", "75", "100", number, "none"
-        */
-linkOpacity: Responsive<"10" | "25" | "50" | "75" | "100" | number | "none">;
+  /**
+   * Change the alpha opacity of the link rgba() color value with utilities. Please be aware that changes to a color’s opacity can lead to links with insufficient contrast.
+   * @param {opacity} textEmphasis "10", "25", "50", "75", "100", number, "none"
+   */
+  linkOpacity: Responsive<"10" | "25" | "50" | "75" | "100" | number | "none">;
 
-/**
-            * Change the underline’s color independent of the link text color.
-    * @param {string} linkUnderline ThemeColor, boolean, "none"
-        */
-linkUnderline: Responsive<ThemeColor | boolean | "none">;
+  /**
+   * Change the underline’s color independent of the link text color.
+   * @param {string} linkUnderline ThemeColor, boolean, "none"
+   */
+  linkUnderline: Responsive<ThemeColor | boolean | "none">;
 
-/**
-            * Change the underline’s opacity. Requires adding .link-underline to first set an rgba() color we use to then modify the alpha opacity.
-    * @param {string} linkUnderlineOpacity "0", "10", "25", "50", "75", "100", number, "none"
-        */
-linkUnderlineOpacity: Responsive<"0" | "10" | "25" | "50" | "75" | "100" | number | "none">;
+  /**
+   * Change the underline’s opacity. Requires adding .link-underline to first set an rgba() color we use to then modify the alpha opacity.
+   * @param {string} linkUnderlineOpacity "0", "10", "25", "50", "75", "100", number, "none"
+   */
+  linkUnderlineOpacity: Responsive<
+    "0" | "10" | "25" | "50" | "75" | "100" | number | "none"
+  >;
 
-/**
-            * Add .stretched-link to a link to make its containing block clickable via a ::after pseudo element. In most cases, this means that an element with position: relative; that contains a link with the .stretched-link class is clickable. Please note given how CSS position works, .stretched-link cannot be mixed with most table elements.
-    * @param {string} stretchedLink boolean
-        */
-stretchedLink: Responsive<boolean>;
+  /**
+   * Add .stretched-link to a link to make its containing block clickable via a ::after pseudo element. In most cases, this means that an element with position: relative; that contains a link with the .stretched-link class is clickable. Please note given how CSS position works, .stretched-link cannot be mixed with most table elements.
+   * @param {string} stretchedLink boolean
+   */
+  stretchedLink: Responsive<boolean>;
 
-/**
-            * Easily realign text to components with text alignment classes. For start, end, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.
-    * @param {string} textAlign "start", "end", "center", "none"
-        */
-textAlign: Responsive<"start" | "end" | "center" | "none">;
+  /**
+   * Easily realign text to components with text alignment classes. For start, end, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.
+   * @param {string} textAlign "start", "end", "center", "none"
+   */
+  textAlign: Responsive<"start" | "end" | "center" | "none">;
 
-/**
-            * Set background color by adding class names: text-bg-{color}
-    * @param {string} textBg ThemeColor, "none"
-        */
-textBg: Responsive<ThemeColor | "none">;
+  /**
+   * Set background color by adding class names: text-bg-{color}
+   * @param {string} textBg ThemeColor, "none"
+   */
+  textBg: Responsive<ThemeColor | "none">;
 
-/**
-            * Prevent long strings of text from breaking your components’ layout by using .text-break to set word-wrap: break-word and word-break: break-word. We use word-wrap instead of the more common overflow-wrap for wider browser support, and add the deprecated word-break: break-word to avoid issues with flex containers.
-    * @param {boolean} textBreak boolean
-        */
-textBreak: Responsive<boolean>;
+  /**
+   * Prevent long strings of text from breaking your components’ layout by using .text-break to set word-wrap: break-word and word-break: break-word. We use word-wrap instead of the more common overflow-wrap for wider browser support, and add the deprecated word-break: break-word to avoid issues with flex containers.
+   * @param {boolean} textBreak boolean
+   */
+  textBreak: Responsive<boolean>;
 
-/**
-            * Colorize text with color utilities. If you want to colorize links, you can use the .link-* helper classes which have :hover and :focus states.
-    * @param {ThemeColor} textColor ThemeColor, (CSS.Property.Color & Record<never, never>), "black", "white", "body", "muted", "black-50", "white-50", "body-secondary", "body-tertiary", "body-emphasis", "none"
-        */
-textColor: Responsive<ThemeColor | (CSS.Property.Color & Record<never, never>) | "black" | "white" | "body" | "muted" | "black-50" | "white-50" | "body-secondary" | "body-tertiary" | "body-emphasis" | "none">;
+  /**
+   * Colorize text with color utilities. If you want to colorize links, you can use the .link-* helper classes which have :hover and :focus states.
+   * @param {ThemeColor} textColor ThemeColor, (CSS.Property.Color & Record<never, never>), "black", "white", "body", "muted", "black-50", "white-50", "body-secondary", "body-tertiary", "body-emphasis", "none"
+   */
+  textColor: Responsive<
+    | ThemeColor
+    | (CSS.Property.Color & Record<never, never>)
+    | "black"
+    | "white"
+    | "body"
+    | "muted"
+    | "black-50"
+    | "white-50"
+    | "body-secondary"
+    | "body-tertiary"
+    | "body-emphasis"
+    | "none"
+  >;
 
-/**
-            * Decorate text in components with text decoration classes.
-    * @param {string} textDecoration "none", "underline", "line-through", (CSS.Property.TextDecoration & Record<never, never>)
-        */
-textDecoration: Responsive<"none" | "underline" | "line-through" | (CSS.Property.TextDecoration & Record<never, never>)>;
+  /**
+   * Decorate text in components with text decoration classes.
+   * @param {string} textDecoration "none", "underline", "line-through", (CSS.Property.TextDecoration & Record<never, never>)
+   */
+  textDecoration: Responsive<
+    | "none"
+    | "underline"
+    | "line-through"
+    | (CSS.Property.TextDecoration & Record<never, never>)
+  >;
 
-/**
-            * For higher contrast text. Not applicable for backgrounds.
-    * @param {boolean} textEmphasis boolean
-        */
-textEmphasis: Responsive<boolean>;
+  /**
+   * For higher contrast text. Not applicable for backgrounds.
+   * @param {boolean} textEmphasis boolean
+   */
+  textEmphasis: Responsive<boolean>;
 
-/**
-            * The `text-indent` property specifies the indentation of the first line in a text-block.
-    *
-    * **Note**: Negative values are allowed. The first line will be indented to the left if the value is negative.
-    * @param {CSS.Property.TextIndent} textIndent CSS.Property.TextIndent
-        */
-textIndent: Responsive<CSS.Property.TextIndent>;
+  /**
+   * The `text-indent` property specifies the indentation of the first line in a text-block.
+   *
+   * **Note**: Negative values are allowed. The first line will be indented to the left if the value is negative.
+   * @param {CSS.Property.TextIndent} textIndent CSS.Property.TextIndent
+   */
+  textIndent: Responsive<CSS.Property.TextIndent>;
 
-/**
-          * The `text-justify` property specifies the justification method of text when text-align is set to "justify".
-  * @param {CSS.Property.TextJustify} textJustify CSS.Property.TextJustify
-        */
-textJustify: Responsive<CSS.Property.TextJustify>;
+  /**
+   * The `text-justify` property specifies the justification method of text when text-align is set to "justify".
+   * @param {CSS.Property.TextJustify} textJustify CSS.Property.TextJustify
+   */
+  textJustify: Responsive<CSS.Property.TextJustify>;
 
-/**
-            * Control the opacity of elements.
-    * @param {string} textOpacity "25", "50", "75", "100", (CSS.Property.Opacity & Record<never, never>), "none"
-        */
-textOpacity: Responsive<"25" | "50" | "75" | "100" | (CSS.Property.Opacity & Record<never, never>) | "none">;
+  /**
+   * Control the opacity of elements.
+   * @param {string} textOpacity "25", "50", "75", "100", (CSS.Property.Opacity & Record<never, never>), "none"
+   */
+  textOpacity: Responsive<
+    | "25"
+    | "50"
+    | "75"
+    | "100"
+    | (CSS.Property.Opacity & Record<never, never>)
+    | "none"
+  >;
 
-/**
-          * The `text-orientation` property specifies the orientation of characters.
-  * @param {CSS.Property.TextOrientation} textOrientation CSS.Property.TextOrientation
-        */
-textOrientation: Responsive<CSS.Property.TextOrientation>;
+  /**
+   * The `text-orientation` property specifies the orientation of characters.
+   * @param {CSS.Property.TextOrientation} textOrientation CSS.Property.TextOrientation
+   */
+  textOrientation: Responsive<CSS.Property.TextOrientation>;
 
-/**
-          * The `text-overflow` property specifies how overflowed content that is not displayed should be signaled to the user. It can be clipped, display an ellipsis (...), or display a custom string.
-  *
-  * **Note:** Both of the following properties are required for text-overflow: `white-space: nowrap` and `overflow: hidden` .
-  * @param {CSS.Property.TextOverflow} textOverflow CSS.Property.TextOverflow
-        */
-textOverflow: Responsive<CSS.Property.TextOverflow>;
+  /**
+   * The `text-overflow` property specifies how overflowed content that is not displayed should be signaled to the user. It can be clipped, display an ellipsis (...), or display a custom string.
+   *
+   * **Note:** Both of the following properties are required for text-overflow: `white-space: nowrap` and `overflow: hidden` .
+   * @param {CSS.Property.TextOverflow} textOverflow CSS.Property.TextOverflow
+   */
+  textOverflow: Responsive<CSS.Property.TextOverflow>;
 
-/**
-            * Reset a text or link’s color with .text-reset, so that it inherits the color from its parent.
-    * @param {boolean} textReset boolean
-        */
-textReset: Responsive<boolean>;
+  /**
+   * Reset a text or link’s color with .text-reset, so that it inherits the color from its parent.
+   * @param {boolean} textReset boolean
+   */
+  textReset: Responsive<boolean>;
 
-/**
-          * The `text-shadow` property adds shadow to text. This property accepts a comma-separated list of shadows to be applied to the text.
-  * @param {CSS.Property.TextShadow} textShadow CSS.Property.TextShadow
-        */
-textShadow: Responsive<CSS.Property.TextShadow>;
+  /**
+   * The `text-shadow` property adds shadow to text. This property accepts a comma-separated list of shadows to be applied to the text.
+   * @param {CSS.Property.TextShadow} textShadow CSS.Property.TextShadow
+   */
+  textShadow: Responsive<CSS.Property.TextShadow>;
 
-/**
-            * Transform text in components with text capitalization classes.
-    * @param {string} textTransform "lowercase", "uppercase", "capitalize", (CSS.Property.TextTransform & Record<never, never>), "none"
-        */
-textTransform: Responsive<"lowercase" | "uppercase" | "capitalize" | (CSS.Property.TextTransform & Record<never, never>) | "none">;
+  /**
+   * Transform text in components with text capitalization classes.
+   * @param {string} textTransform "lowercase", "uppercase", "capitalize", (CSS.Property.TextTransform & Record<never, never>), "none"
+   */
+  textTransform: Responsive<
+    | "lowercase"
+    | "uppercase"
+    | "capitalize"
+    | (CSS.Property.TextTransform & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * For longer content, you can add a .text-truncate class to truncate the text with an ellipsis. Requires display: inline-block or display: block.
-    * @param {string} textTrunc boolean
-        */
-textTrunc: Responsive<boolean>;
+  /**
+   * For longer content, you can add a .text-truncate class to truncate the text with an ellipsis. Requires display: inline-block or display: block.
+   * @param {string} textTrunc boolean
+   */
+  textTrunc: Responsive<boolean>;
 
-/**
-            * Wrap text with a .text-wrap or .text-nowrap class.
-    * @param {string} textWrap "wrap", "nowrap", "none"
-        */
-textWrap: Responsive<"wrap" | "nowrap" | "none">;
+  /**
+   * Wrap text with a .text-wrap or .text-nowrap class.
+   * @param {string} textWrap "wrap", "nowrap", "none"
+   */
+  textWrap: Responsive<"wrap" | "nowrap" | "none">;
 
-/**
-            * Setting the css value `vertical-align: text-bottom`
-    * @param {string} vTextAlign "bottom", "top", "none"
-        */
-vTextAlign: Responsive<"bottom" | "top" | "none">;
+  /**
+   * Setting the css value `vertical-align: text-bottom`
+   * @param {string} vTextAlign "bottom", "top", "none"
+   */
+  vTextAlign: Responsive<"bottom" | "top" | "none">;
 
-/**
-          * The `zoom` property specifies the zoom factor for an element. An element can be zoomed in and out..
-  * @param {CSS.Property.Zoom} zoom CSS.Property.Zoom
-        */
-zoom: Responsive<CSS.Property.Zoom>;
-        }>;
-
+  /**
+   * The `zoom` property specifies the zoom factor for an element. An element can be zoomed in and out..
+   * @param {CSS.Property.Zoom} zoom CSS.Property.Zoom
+   */
+  zoom: Responsive<CSS.Property.Zoom>;
+}>;
 
 export type FlexProps = Partial<{
-        
-/**
-            * Use align-content utilities on flexbox containers to align flex items together on the cross axis. Choose from start (browser default), end, center, between, around, or stretch. To demonstrate these utilities, we’ve enforced flex-wrap: wrap and increased the number of flex items.
-    * *Heads up!* This property has no effect on single rows of flex items.
-    * @param {string} alignContent "start", "end", "center", "between", "around", "stretch", (CSS.Property.AlignContent & Record<never, never>), "none"
-        */
-alignContent: Responsive<"start" | "end" | "center" | "between" | "around" | "stretch" | (CSS.Property.AlignContent & Record<never, never>) | "none">;
+  /**
+   * Use align-content utilities on flexbox containers to align flex items together on the cross axis. Choose from start (browser default), end, center, between, around, or stretch. To demonstrate these utilities, we’ve enforced flex-wrap: wrap and increased the number of flex items.
+   * *Heads up!* This property has no effect on single rows of flex items.
+   * @param {string} alignContent "start", "end", "center", "between", "around", "stretch", (CSS.Property.AlignContent & Record<never, never>), "none"
+   */
+  alignContent: Responsive<
+    | "start"
+    | "end"
+    | "center"
+    | "between"
+    | "around"
+    | "stretch"
+    | (CSS.Property.AlignContent & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Use `align-items` utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).
-    * @param {string} alignItems "start", "end", "center", "baseline", "stretch", (CSS.Property.AlignItems & Record<never, never>), "none"
-        */
-alignItems: Responsive<"start" | "end" | "center" | "baseline" | "stretch" | (CSS.Property.AlignItems & Record<never, never>) | "none">;
+  /**
+   * Use `align-items` utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).
+   * @param {string} alignItems "start", "end", "center", "baseline", "stretch", (CSS.Property.AlignItems & Record<never, never>), "none"
+   */
+  alignItems: Responsive<
+    | "start"
+    | "end"
+    | "center"
+    | "baseline"
+    | "stretch"
+    | (CSS.Property.AlignItems & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Use `align-self` utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from the same options as align-items: start, end, center, baseline, or stretch (browser default).
-    * @param {string} alignSelf "auto", "start", "end", "center", "baseline", "stretch", (CSS.Property.AlignSelf & Record<never, never>), "none"
-        */
-alignSelf: Responsive<"auto" | "start" | "end" | "center" | "baseline" | "stretch" | (CSS.Property.AlignSelf & Record<never, never>) | "none">;
+  /**
+   * Use `align-self` utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from the same options as align-items: start, end, center, baseline, or stretch (browser default).
+   * @param {string} alignSelf "auto", "start", "end", "center", "baseline", "stretch", (CSS.Property.AlignSelf & Record<never, never>), "none"
+   */
+  alignSelf: Responsive<
+    | "auto"
+    | "start"
+    | "end"
+    | "center"
+    | "baseline"
+    | "stretch"
+    | (CSS.Property.AlignSelf & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `column-gap` sets the horizontal space between children items in the specified container.
-    * @param {string} columnGap "0", "1", "2", "3", "4", "5", (CSS.Property.ColumnGap & Record<never, never>), "none"
-        */
-columnGap: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.ColumnGap & Record<never, never>) | "none">;
+  /**
+   * `column-gap` sets the horizontal space between children items in the specified container.
+   * @param {string} columnGap "0", "1", "2", "3", "4", "5", (CSS.Property.ColumnGap & Record<never, never>), "none"
+   */
+  columnGap: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.ColumnGap & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Apply `display: flex` utilities to create a flexbox container and transform direct children elements into flex items. Flex containers and items are able to be modified further with additional flex properties.
-    * @param {string} flex "fill", "row", "column", "row-reverse", "column-reverse", "grow-0", "grow-1", "shrink-0", "shrink-1", "wrap", "nowrap", "wrap-reverse", (CSS.Property.Flex & Record<never, never>), "none"
-        */
-flex: Responsive<"fill" | "row" | "column" | "row-reverse" | "column-reverse" | "grow-0" | "grow-1" | "shrink-0" | "shrink-1" | "wrap" | "nowrap" | "wrap-reverse" | (CSS.Property.Flex & Record<never, never>) | "none">;
+  /**
+   * Apply `display: flex` utilities to create a flexbox container and transform direct children elements into flex items. Flex containers and items are able to be modified further with additional flex properties.
+   * @param {string} flex "fill", "row", "column", "row-reverse", "column-reverse", "grow-0", "grow-1", "shrink-0", "shrink-1", "wrap", "nowrap", "wrap-reverse", (CSS.Property.Flex & Record<never, never>), "none"
+   */
+  flex: Responsive<
+    | "fill"
+    | "row"
+    | "column"
+    | "row-reverse"
+    | "column-reverse"
+    | "grow-0"
+    | "grow-1"
+    | "shrink-0"
+    | "shrink-1"
+    | "wrap"
+    | "nowrap"
+    | "wrap-reverse"
+    | (CSS.Property.Flex & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * The `flex-basis` property specifies the initial length of a flexible item.
-    *
-    * **Note:** If the element is not a flexible item, the `flex-basis` property has no effect.
-    * @param {CSS.Property.FlexBasis} flexBasis CSS.Property.FlexBasis
-        */
-flexBasis: Responsive<CSS.Property.FlexBasis>;
+  /**
+   * The `flex-basis` property specifies the initial length of a flexible item.
+   *
+   * **Note:** If the element is not a flexible item, the `flex-basis` property has no effect.
+   * @param {CSS.Property.FlexBasis} flexBasis CSS.Property.FlexBasis
+   */
+  flexBasis: Responsive<CSS.Property.FlexBasis>;
 
-/**
-            * The `flex-direction` property specifies the direction of the flexible items.
-    * 
-    * **Note:** If the element is not a flexible item, the `flex-direction` property has no effect.
-    * @param {CSS.Property.FlexDirection} flexDirection CSS.Property.FlexDirection
-        */
-flexDirection: Responsive<CSS.Property.FlexDirection>;
+  /**
+   * The `flex-direction` property specifies the direction of the flexible items.
+   *
+   * **Note:** If the element is not a flexible item, the `flex-direction` property has no effect.
+   * @param {CSS.Property.FlexDirection} flexDirection CSS.Property.FlexDirection
+   */
+  flexDirection: Responsive<CSS.Property.FlexDirection>;
 
-/**
-            * The `flex-flow` property is a shorthand property for: `flex-direction` and `flex-wrap`
-    *
-    * Note: If the elements are not flexible items, the `flex-flow` property has no effect.
-    * @param {CSS.Property.FlexFlow} flexFlow CSS.Property.FlexFlow
-        */
-flexFlow: Responsive<CSS.Property.FlexFlow>;
+  /**
+   * The `flex-flow` property is a shorthand property for: `flex-direction` and `flex-wrap`
+   *
+   * Note: If the elements are not flexible items, the `flex-flow` property has no effect.
+   * @param {CSS.Property.FlexFlow} flexFlow CSS.Property.FlexFlow
+   */
+  flexFlow: Responsive<CSS.Property.FlexFlow>;
 
-/**
-            * The `flex-grow` property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
-    *
-    * **Note:** If the element is not a flexible item, the `flex-grow` property has no effect.
-    * @param {CSS.Property.FlexGrow} flexGrow CSS.Property.FlexGrow
-        */
-flexGrow: Responsive<CSS.Property.FlexGrow>;
+  /**
+   * The `flex-grow` property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+   *
+   * **Note:** If the element is not a flexible item, the `flex-grow` property has no effect.
+   * @param {CSS.Property.FlexGrow} flexGrow CSS.Property.FlexGrow
+   */
+  flexGrow: Responsive<CSS.Property.FlexGrow>;
 
-/**
-            * The `flex-shrink` property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
-    *
-    * **Note:** If the element is not a flexible item, the `flex-shrink` property has no effect.
-    * @param {CSS.Property.FlexShrink} flexShrink CSS.Property.FlexShrink
-        */
-flexShrink: Responsive<CSS.Property.FlexShrink>;
+  /**
+   * The `flex-shrink` property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+   *
+   * **Note:** If the element is not a flexible item, the `flex-shrink` property has no effect.
+   * @param {CSS.Property.FlexShrink} flexShrink CSS.Property.FlexShrink
+   */
+  flexShrink: Responsive<CSS.Property.FlexShrink>;
 
-/**
-            * The `flex-wrap` property specifies whether the flexible items should wrap or not.
-    *
-    * **Note:** If the elements are not flexible items, the `flex-wrap` property has no effect.
-    * @param {boolean, (CSS.Property.FlexWrap & Record<never, never>)} flexWrap boolean, (CSS.Property.FlexWrap & Record<never, never>)
-        */
-flexWrap: Responsive<boolean | (CSS.Property.FlexWrap & Record<never, never>)>;
+  /**
+   * The `flex-wrap` property specifies whether the flexible items should wrap or not.
+   *
+   * **Note:** If the elements are not flexible items, the `flex-wrap` property has no effect.
+   * @param {boolean, (CSS.Property.FlexWrap & Record<never, never>)} flexWrap boolean, (CSS.Property.FlexWrap & Record<never, never>)
+   */
+  flexWrap: Responsive<
+    boolean | (CSS.Property.FlexWrap & Record<never, never>)
+  >;
 
-/**
-            * When using `display: grid` or `display: flex`, you can make use of gap utilities on the parent element. This can save on having to add margin utilities to individual children of a grid or flex container. Gap utilities are responsive by default, and are generated via our utilities API, based on the `$spacers` Sass map.
-    * @param {string} gap "0", "1", "2", "3", "4", "5", (CSS.Property.Gap & Record<never, never>), "none"
-        */
-gap: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.Gap & Record<never, never>) | "none">;
+  /**
+   * When using `display: grid` or `display: flex`, you can make use of gap utilities on the parent element. This can save on having to add margin utilities to individual children of a grid or flex container. Gap utilities are responsive by default, and are generated via our utilities API, based on the `$spacers` Sass map.
+   * @param {string} gap "0", "1", "2", "3", "4", "5", (CSS.Property.Gap & Record<never, never>), "none"
+   */
+  gap: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.Gap & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Use `justify-content` utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, center, between, around, or evenly.
-    * @param {string} justifyContent "start", "end", "center", "between", "around", "evenly", (CSS.Property.JustifyContent & Record<never, never>), "none"
-        */
-justifyContent: Responsive<"start" | "end" | "center" | "between" | "around" | "evenly" | (CSS.Property.JustifyContent & Record<never, never>) | "none">;
+  /**
+   * Use `justify-content` utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, center, between, around, or evenly.
+   * @param {string} justifyContent "start", "end", "center", "between", "around", "evenly", (CSS.Property.JustifyContent & Record<never, never>), "none"
+   */
+  justifyContent: Responsive<
+    | "start"
+    | "end"
+    | "center"
+    | "between"
+    | "around"
+    | "evenly"
+    | (CSS.Property.JustifyContent & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Use `.order-*` classes for controlling the visual order of your content. Useful for the `flex` system.
-    * @param {string} order "first", "0", "1", "2", "3", "4", "5", "last", (CSS.Property.Order & Record<never, never>), "none"
-        */
-order: Responsive<"first" | "0" | "1" | "2" | "3" | "4" | "5" | "last" | (CSS.Property.Order & Record<never, never>) | "none">;
+  /**
+   * Use `.order-*` classes for controlling the visual order of your content. Useful for the `flex` system.
+   * @param {string} order "first", "0", "1", "2", "3", "4", "5", "last", (CSS.Property.Order & Record<never, never>), "none"
+   */
+  order: Responsive<
+    | "first"
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "last"
+    | (CSS.Property.Order & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * `row-gap` sets the vertical space between children items in the specified container.
-    * @param {string} rowGap "0", "1", "2", "3", "4", "5", (CSS.Property.RowGap & Record<never, never>), "none"
-        */
-rowGap: Responsive<"0" | "1" | "2" | "3" | "4" | "5" | (CSS.Property.RowGap & Record<never, never>) | "none">;
-        }>;
-
+  /**
+   * `row-gap` sets the vertical space between children items in the specified container.
+   * @param {string} rowGap "0", "1", "2", "3", "4", "5", (CSS.Property.RowGap & Record<never, never>), "none"
+   */
+  rowGap: Responsive<
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | (CSS.Property.RowGap & Record<never, never>)
+    | "none"
+  >;
+}>;
 
 export type OtherProps = Partial<{
-        
-/**
-            * Use generated pseudo elements to make an element maintain the aspect ratio of your choosing. Perfect for responsively handling video or slideshow embeds based on the width of the parent.
-    * @param {string} aspectRatio "1x1", "4x3", "16x9", "21x9", "none"
-        */
-aspectRatio: Responsive<"1x1" | "4x3" | "16x9" | "21x9" | "none">;
+  /**
+   * Use generated pseudo elements to make an element maintain the aspect ratio of your choosing. Perfect for responsively handling video or slideshow embeds based on the width of the parent.
+   * @param {string} aspectRatio "1x1", "4x3", "16x9", "21x9", "none"
+   */
+  aspectRatio: Responsive<"1x1" | "4x3" | "16x9" | "21x9" | "none">;
 
-/**
-            * Override default `list-style` style with custom styles.
-    * @param {string} listStyle "unstyled", "inline", "inline-item", (CSS.Property.ListStyle & Record<never, never>), "none"
-        */
-listStyle: Responsive<"unstyled" | "inline" | "inline-item" | (CSS.Property.ListStyle & Record<never, never>) | "none">;
+  /**
+   * Override default `list-style` style with custom styles.
+   * @param {string} listStyle "unstyled", "inline", "inline-item", (CSS.Property.ListStyle & Record<never, never>), "none"
+   */
+  listStyle: Responsive<
+    | "unstyled"
+    | "inline"
+    | "inline-item"
+    | (CSS.Property.ListStyle & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * The opacity property sets the opacity level for an element. The opacity level describes the transparency level, where 1 is not transparent at all, .5 is 50% visible, and 0 is completely transparent.
-    * @param {string} opacity "0", "25", "50", "75", "100", (CSS.Property.Opacity & Record<never, never>), "none"
-        */
-opacity: Responsive<"0" | "25" | "50" | "75" | "100" | (CSS.Property.Opacity & Record<never, never>) | "none">;
+  /**
+   * The opacity property sets the opacity level for an element. The opacity level describes the transparency level, where 1 is not transparent at all, .5 is 50% visible, and 0 is completely transparent.
+   * @param {string} opacity "0", "25", "50", "75", "100", (CSS.Property.Opacity & Record<never, never>), "none"
+   */
+  opacity: Responsive<
+    | "0"
+    | "25"
+    | "50"
+    | "75"
+    | "100"
+    | (CSS.Property.Opacity & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * Using Bootstrap `.pe-none` and `.pe-auto` classes to prevent or add element interactions.
-    * @param {string} pointerEvents "none", "auto"
-        */
-pointerEvents: Responsive<"none" | "auto">;
+  /**
+   * Using Bootstrap `.pe-none` and `.pe-auto` classes to prevent or add element interactions.
+   * @param {string} pointerEvents "none", "auto"
+   */
+  pointerEvents: Responsive<"none" | "auto">;
 
-/**
-          * The `scrollbar-color` property specifies the color of the scrollbar track (background) and thumb (the scroller).
-  * @param {CSS.Property.ScrollbarColor} scrollbarColor CSS.Property.ScrollbarColor
-        */
-scrollbarColor: Responsive<CSS.Property.ScrollbarColor>;
+  /**
+   * The `scrollbar-color` property specifies the color of the scrollbar track (background) and thumb (the scroller).
+   * @param {CSS.Property.ScrollbarColor} scrollbarColor CSS.Property.ScrollbarColor
+   */
+  scrollbarColor: Responsive<CSS.Property.ScrollbarColor>;
 
-/**
-          * The `CSS.Property.ScrollBehavior` property specifies whether to smoothly animate the scroll position, instead of a straight jump, when the user clicks on a link within a scrollable box.
-  * @param {CSS.Property.ScrollBehavior} scrollBehavior CSS.Property.ScrollBehavior
-        */
-scrollBehavior: Responsive<CSS.Property.ScrollBehavior>;
+  /**
+   * The `CSS.Property.ScrollBehavior` property specifies whether to smoothly animate the scroll position, instead of a straight jump, when the user clicks on a link within a scrollable box.
+   * @param {CSS.Property.ScrollBehavior} scrollBehavior CSS.Property.ScrollBehavior
+   */
+  scrollBehavior: Responsive<CSS.Property.ScrollBehavior>;
 
-/**
-          * The `scroll-margin` property specifies the distance between the snap position and the container.
-  *
-  * This means that when you stop scrolling, the scrolling will quickly adjust and stop at a specified distance between the snap position and the container.
-  * @param {CSS.Property.ScrollMargin} scrollMargin CSS.Property.ScrollMargin
-        */
-scrollMargin: Responsive<CSS.Property.ScrollMargin>;
+  /**
+   * The `scroll-margin` property specifies the distance between the snap position and the container.
+   *
+   * This means that when you stop scrolling, the scrolling will quickly adjust and stop at a specified distance between the snap position and the container.
+   * @param {CSS.Property.ScrollMargin} scrollMargin CSS.Property.ScrollMargin
+   */
+  scrollMargin: Responsive<CSS.Property.ScrollMargin>;
 
-/**
-          * The `scroll-padding` property specifies the distance from the container to the snap position of child elements.
-  * 
-  * This means that when you stop scrolling, the scrolling will quickly adjust and stop at a specified distance from the container to the snap position of the child element in focus.
-  * @param {CSS.Property.ScrollPadding} scrollPadding CSS.Property.ScrollPadding
-        */
-scrollPadding: Responsive<CSS.Property.ScrollPadding>;
+  /**
+   * The `scroll-padding` property specifies the distance from the container to the snap position of child elements.
+   *
+   * This means that when you stop scrolling, the scrolling will quickly adjust and stop at a specified distance from the container to the snap position of the child element in focus.
+   * @param {CSS.Property.ScrollPadding} scrollPadding CSS.Property.ScrollPadding
+   */
+  scrollPadding: Responsive<CSS.Property.ScrollPadding>;
 
-/**
-            * Add or remove shadows to elements with box-shadow utilities.
-    * @param {string} shadow boolean, "sm", "lg", "none", (CSS.Property.BoxShadow & Record<never, never>), "none"
-        */
-shadow: Responsive<boolean | "sm" | "lg" | "none" | (CSS.Property.BoxShadow & Record<never, never>) | "none">;
+  /**
+   * Add or remove shadows to elements with box-shadow utilities.
+   * @param {string} shadow boolean, "sm", "lg", "none", (CSS.Property.BoxShadow & Record<never, never>), "none"
+   */
+  shadow: Responsive<
+    | boolean
+    | "sm"
+    | "lg"
+    | "none"
+    | (CSS.Property.BoxShadow & Record<never, never>)
+    | "none"
+  >;
 
-/**
-            * The `transition` property is a shorthand property for: `transition-property`, `transition-duration`, `transition-timing-function`, `transition-delay`
-    * @param {CSS.Property.Transition} transition CSS.Property.Transition
-        */
-transition: Responsive<CSS.Property.Transition>;
+  /**
+   * The `transition` property is a shorthand property for: `transition-property`, `transition-duration`, `transition-timing-function`, `transition-delay`
+   * @param {CSS.Property.Transition} transition CSS.Property.Transition
+   */
+  transition: Responsive<CSS.Property.Transition>;
 
-/**
-            * Change the way in which the content is selected when the user interacts with it.
-    * @param {string} userSelect "all", "auto", "none", (CSS.Property.UserSelect & Record<never, never>)
-        */
-userSelect: Responsive<"all" | "auto" | "none" | (CSS.Property.UserSelect & Record<never, never>)>;
-        }>;
-
+  /**
+   * Change the way in which the content is selected when the user interacts with it.
+   * @param {string} userSelect "all", "auto", "none", (CSS.Property.UserSelect & Record<never, never>)
+   */
+  userSelect: Responsive<
+    "all" | "auto" | "none" | (CSS.Property.UserSelect & Record<never, never>)
+  >;
+}>;
 
 export type ImageProp = Partial<{
-        
-/**
-            * Images in Bootstrap are made responsive with *.img-fluid*. This applies *max-width: 100%;* and *height: auto;* to the image so that it scales with the parent width.
-    * @param {boolean} imgFluid boolean
-        */
-imgFluid: Responsive<boolean>;
+  /**
+   * Images in Bootstrap are made responsive with *.img-fluid*. This applies *max-width: 100%;* and *height: auto;* to the image so that it scales with the parent width.
+   * @param {boolean} imgFluid boolean
+   */
+  imgFluid: Responsive<boolean>;
 
-/**
-            * In addition to our border-radius utilities, you can use *.img-thumbnail* to give an image a rounded 1px border appearance.
-    * @param {boolean} imgThumbnail boolean
-        */
-imgThumbnail: Responsive<boolean>;
+  /**
+   * In addition to our border-radius utilities, you can use *.img-thumbnail* to give an image a rounded 1px border appearance.
+   * @param {boolean} imgThumbnail boolean
+   */
+  imgThumbnail: Responsive<boolean>;
 
-/**
-            * Use the object fit utilities to modify how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.
-    * @param {string} objectFit "contain", "cover", "fill", "scale", "none"
-        */
-objectFit: Responsive<"contain" | "cover" | "fill" | "scale" | "none">;
+  /**
+   * Use the object fit utilities to modify how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.
+   * @param {string} objectFit "contain", "cover", "fill", "scale", "none"
+   */
+  objectFit: Responsive<"contain" | "cover" | "fill" | "scale" | "none">;
 
-/**
-            * The CSS object-position property is used to specify how an *<img>* or *<video>* should be positioned within its container.
-    * @param {string} objectPosition CSS.Property.ObjectPosition
-        */
-objectPosition: Responsive<CSS.Property.ObjectPosition>;
-        }>;
+  /**
+   * The CSS object-position property is used to specify how an *<img>* or *<video>* should be positioned within its container.
+   * @param {string} objectPosition CSS.Property.ObjectPosition
+   */
+  objectPosition: Responsive<CSS.Property.ObjectPosition>;
+}>;
 // End generated code
 
 //
@@ -1260,7 +1771,6 @@ export type AccordionProp = Partial<{
   onSelect?: (eventKey: string, event: object) => void;
 }>;
 
-
 export type AlertProp = Partial<{
   /**
    * Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.
@@ -1356,7 +1866,6 @@ export type AnimationProp = Partial<{
   onChange: (isShow: boolean) => void;
 }>;
 
-
 export type BadgeProp = Partial<{
   /**
    * The badge background color
@@ -1393,7 +1902,6 @@ export type ButtonGroupProp = Partial<{
    */
   size: "lg" | "md" | "sm";
 }>;
-
 
 export type ButtonProp = Partial<{
   /**
@@ -1494,7 +2002,6 @@ export type ButtonProp = Partial<{
     "ripple" | "puff" | "box-shadow" | "slide" | "stripe"
   >;
 }>;
-
 
 export type DateTimePresetRange = { title: string; from: Date; to: Date };
 
@@ -1683,7 +2190,6 @@ export type DateTimeRangePickerProp = CalendarPickerProp &
     onSelectPresetRange: (val: DateTimePresetRange) => void;
   }>;
 
-
 export type CardProp = Partial<{
   /**
    * Set a background-color with contrasting foreground color with our `.text-bg-{color}` helpers
@@ -1731,7 +2237,6 @@ export type CloseButtonProp = Partial<{
    */
   disabled: boolean;
 }>;
-
 
 export type DropdownProp = Partial<{
   /**
@@ -1830,7 +2335,6 @@ export type DropdownItemProp = Partial<{
    */
   type: "button" | string;
 }>;
-
 
 export type CheckboxProp = Partial<{
   /**
@@ -2234,7 +2738,6 @@ export type FormFloatingProp = Partial<{
   label: string;
 }>;
 
-
 export type ContainerProp = Partial<{
   /**
    * Use *.container-fluid* for a full width container, spanning the entire width of the viewport.
@@ -2254,7 +2757,7 @@ export type RowProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
 
   /**
    * Use these row columns classes to quickly create basic grid layouts or to control your card layouts.
@@ -2283,7 +2786,7 @@ export type ColProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
 
   /**
    * Apply property on viewports sized XS (extra small) or wider.
@@ -2302,7 +2805,7 @@ export type StackProp = Partial<{
    *
    * @default div
    */
-  as: "div" | React.ReactElement;
+  as: "div" | React.ComponentType;
 
   /**
    * Applying Bootstrap `flex-fill` classname
@@ -2364,7 +2867,6 @@ export type StackProp = Partial<{
    */
   wrapReverse: Responsive<boolean>;
 }>;
-
 
 export type ListGroupProp = Partial<{
   /**
@@ -2440,7 +2942,6 @@ export type ListGroupItemProp = Partial<{
   href: string;
 }>;
 
-
 export type ModalProp = Partial<{
   /**
    * Modals have three optional sizes, available via modifier classes to be placed on a `.modal-dialog`. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.
@@ -2495,7 +2996,6 @@ export type ModalProp = Partial<{
    */
   animation: AnimationType;
 }>;
-
 
 export type NavProp = Partial<{
   /**
@@ -2743,7 +3243,6 @@ export type PaginationItemProp = Partial<{
   disabled: boolean;
 }>;
 
-
 export type PlaceholderProp = Partial<{
   /**
    * Effect of the skeleton loader
@@ -2799,7 +3298,6 @@ export type PlaceholderButtonProp = Partial<{
    */
   size: "lg" | "sm";
 }>;
-
 
 export type PopoverProp = Partial<{
   /**
@@ -2884,7 +3382,6 @@ export type PopoverProp = Partial<{
   onOpenChange: (open: boolean, event?: object) => void;
 }>;
 
-
 export type ProgressProp = Partial<{
   /**
    * Use background utility classes to change the appearance of individual progress bars.
@@ -2936,7 +3433,6 @@ export type ProgressProp = Partial<{
   multiple: boolean;
 }>;
 
-
 export type SpinnerProp = Partial<{
   /**
    * Changes the animation style of the spinner.
@@ -2984,7 +3480,6 @@ export type SpinnerProp = Partial<{
    */
   role: string;
 }>;
-
 
 export type TableProp = Partial<{
   /**
@@ -3089,7 +3584,6 @@ export type TableSubProp = Partial<{
   theme: "light" | "dark";
 }>;
 
-
 export type ToastProp = Partial<{
   /**
    * Apply a CSS fade transition to the toast.
@@ -3144,13 +3638,12 @@ export type ToastContainerProp = Partial<{
   containerPosition: "static" | "fixed";
 }>;
 
-
 export type ToggleButtonProp = Partial<{
   /**
    * The .btn classes are designed to be used with the <button> element. However, you can also use these classes on <a> or <input> elements (though some browsers may apply a slightly different rendering).
    * @default button
    */
-  as: "button" | "input" | React.ReactElement;
+  as: "button" | "input" | React.ComponentType;
 
   /**
    * Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.
@@ -3247,7 +3740,6 @@ export type ToggleButtonProp = Partial<{
   clickEffect: "ripple" | "puff" | "box-shadow" | "slide" | "stripe";
 }>;
 
-
 export type TooltipProp = Partial<{
   /**
    * The informative text is displayed when users hover over, focus on, or tap an element.
@@ -3306,7 +3798,7 @@ export type TypographyProp = Partial<{
   /**
    * All HTML headings, <h1> through <h6>, are available.
    */
-  as: "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | React.ReactElement;
+  as: "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | React.ComponentType;
 
   /**
    * Display headings are configured via the $display-font-sizes
@@ -3318,4 +3810,3 @@ export type TypographyProp = Partial<{
    */
   textLead: boolean;
 }>;
-
